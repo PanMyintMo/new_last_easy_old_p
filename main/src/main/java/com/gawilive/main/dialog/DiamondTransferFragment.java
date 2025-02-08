@@ -138,7 +138,7 @@ public class DiamondTransferFragment extends DialogFragment {
                 MainHttpUtil.diamondTransfer(receiverId, diamondsAmount, password, new HttpCallback() {
                     @Override
                     public void onSuccess(int code, String msg, String[] info) {
-                        Toast.makeText(getContext(), "Transfer successful!", Toast.LENGTH_SHORT).show();
+                        //Toast.makeText(getContext(), "Transfer successful!", Toast.LENGTH_SHORT).show();
                         dismiss();
 
                         if (code == 0 && info.length > 0) {
@@ -149,17 +149,14 @@ public class DiamondTransferFragment extends DialogFragment {
 
                             CommonAppConfig.getInstance().setPinNumber(uid, token, success);
                         } else {
+
+                            if (listener != null) {
+
+                                listener.onTransferComplete(true); // Notify success
+                            }
                             ToastUtil.show(msg);
                         }
-                        if (listener != null) {
-                            listener.onTransferComplete(false); // Notify success
-                        }
 
-
-                        // Navigate back to MainMeViewNewHolder activity
-                        Intent goBack = new Intent(getContext(), MainActivity.class);
-                        goBack.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
-                        startActivity(goBack);
                         dismiss();
 
 
@@ -215,12 +212,21 @@ public class DiamondTransferFragment extends DialogFragment {
         getDialog().setCancelable(true);
     }
 
+
+    // Method to be called when the coin balance is updated
+    private void updateCoinBalance(String newBalance) {
+        Bundle result = new Bundle();
+        result.putString("coin_balance", newBalance);
+        // Use the parent FragmentManager to set the result
+        getParentFragmentManager().setFragmentResult("coinBalanceKey", result);
+    }
+
+
     /**
      * Static method to create a new instance of the dialog fragment.
      */
     public static DiamondTransferFragment newInstance() {
         return new DiamondTransferFragment();
     }
-
 
 }

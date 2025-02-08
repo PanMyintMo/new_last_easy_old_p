@@ -3,6 +3,7 @@ package com.gawilive.main.views;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
@@ -15,13 +16,17 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentResultListener;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.gawilive.main.bean.PayUserBean;
 import com.gawilive.main.dialog.DiamondTransferFragment;
+import com.gawilive.main.interfaces.DiamondTransferListener;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
@@ -57,7 +62,7 @@ import java.util.List;
 import java.util.Map;
 
 // New version of personal center
-public class MainMeViewNewHolder extends AbsMainViewHolder implements SpUtil.OnPreferenceChangeListener{
+public class MainMeViewNewHolder extends AbsMainViewHolder  {
 
     private Context context;
     private FrameLayout mFlTop;
@@ -130,6 +135,29 @@ public class MainMeViewNewHolder extends AbsMainViewHolder implements SpUtil.OnP
     }
 
     @Override
+    public void onCreate() {
+        super.onCreate();
+        FragmentManager manager = ((AppCompatActivity)context).getSupportFragmentManager();
+
+        Log.d("REACH","Reach on Create");
+
+//       manager.setFragmentResultListener("coin_balance", this, new FragmentResultListener() {
+//            @Override
+//            public void onFragmentResult(@NonNull String requestKey, @NonNull Bundle result) {
+//                // Retrieve the new coin balance from the bundle
+//                String newBalance = bundle.getString("coin_balance");
+//                if (newBalance != null) {
+//                    // Update the UI or perform necessary actions with the new balance
+//                    tvCoin.setText(newBalance);
+//                    // Optionally, update SharedPreferences or other storage
+//                    SpUtil.getInstance().setDiamondBalance("coin_balance", newBalance);
+//                }
+//            }
+//            });
+
+    }
+
+    @Override
     public void init() {
         setStatusHeight();
         initView();
@@ -177,7 +205,7 @@ public class MainMeViewNewHolder extends AbsMainViewHolder implements SpUtil.OnP
         // llRedScore = findViewById(R.id.llRedScore);
         llGreenScore = findViewById(R.id.llGreenScore);
 
-         SpUtil.getInstance().setOnPreferenceChangeListener(this);
+
 
 
         mBanner.setImageLoader(new ImageLoader() {
@@ -248,7 +276,8 @@ public class MainMeViewNewHolder extends AbsMainViewHolder implements SpUtil.OnP
 
                         dialog.setDiamondTransferListener(navigateToParent -> {
                             if (navigateToParent) {
-                                Toast.makeText(activity, "Navigating to parent fragment", Toast.LENGTH_SHORT).show();
+                                Log.d("SETDIAMONDTRANSFERLISTENER","SET DIAMOND TRANSFER LISTENER");
+                              initData();
                             }
                         });
 
@@ -763,15 +792,6 @@ public class MainMeViewNewHolder extends AbsMainViewHolder implements SpUtil.OnP
     @Override
     public void onDestroy() {
         super.onDestroy();
-        SpUtil.getInstance().removeOnPreferenceChangeListener();
-    }
 
-
-    @Override
-    public void onPreferenceChanged(String key, String newValue) {
-        if ("coin_balance".equals(key)) {
-            tvCoin.setText(newValue);
-            Log.d("OnPreferenceChangeListener","Coin New Value is " + newValue);
-        }
     }
 }
