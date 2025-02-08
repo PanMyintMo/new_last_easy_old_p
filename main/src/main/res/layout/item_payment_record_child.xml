@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="@dimen/dp_16"
+            android:layout_height="@dimen/dp_40">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Prize ticket number"
+                android:layout_centerVertical="true"
+                android:textColor="#ff8b919c"
+                android:textSize="13sp"
+                />
+
+        <TextView
+                android:id="@+id/tvNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:textColor="#ff4c515b"
+                android:textSize="13sp"
+                />
+    </RelativeLayout>
+</LinearLayout>

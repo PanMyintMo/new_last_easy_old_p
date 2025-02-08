@@ -1,0 +1,34 @@
+ext {
+    android = [
+            compileSdkVersion: 34,
+            buildToolsVersion: "30.0.3",
+            minSdkVersion    : 24,
+            targetSdkVersion : 34,
+            versionCode      : 220,
+            versionName      : "20.2.0"
+    ]
+
+    manifestPlaceholders = [
+            serverHost       : "https://ezwel.live",
+            //   serverHost       : "https://testlive.jingkaikj.com",
+
+            //极光推送 IM
+            jpushAppKey      : "815c1ce8a98a5afb58513755",
+
+            //腾讯地图
+            txMapAppKey      : "Q5HBZ-FT23B-GKZUS-J5RTS-TN6Q7-WPFT4",
+            txMapAppSecret   : "U76vivVzhdXUBpBS5rMfSm5uHgL51MpG",
+            //腾讯bugly
+            buglyAppId       : "08c6143",
+            //百度语音识别
+            baiduAppId       : "26485",
+            baiduAppKey      : "wHwXbKNtW26hU",
+            baiduAppSecretKey: "Bky1IRxcRskRGLTHR",
+            //友盟统计
+            umengAppKey      : "5bff3652000b1e",
+            //codeInstall
+            codeInstallAppKey: "gt13",
+
+    ]
+
+}

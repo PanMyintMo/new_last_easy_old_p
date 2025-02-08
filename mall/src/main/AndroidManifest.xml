@@ -1,0 +1,248 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gawilive.mall">
+
+    <application
+        android:allowBackup="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.gawilive.mall.activity.BuyerActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.gawilive.mall.activity.ShopApplyActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+
+        <activity
+            android:name="com.gawilive.mall.activity.ManageClassActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gawilive.mall.activity.ShopApplyBondActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gawilive.mall.activity.ShopApplyResultActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.gawilive.mall.activity.SellerActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.gawilive.mall.activity.ChooseGoodsClassActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gawilive.mall.activity.SellerAddGoodsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+
+        <activity
+            android:name="com.gawilive.mall.activity.SellerManageGoodsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.gawilive.mall.activity.GoodsDetailActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gawilive.mall.activity.GoodsOutSideDetailActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gawilive.mall.activity.GoodsEditSpecActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gawilive.mall.activity.ShopDetailActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gawilive.mall.activity.ShopCertActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gawilive.mall.activity.SellerAddressActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gawilive.mall.activity.SellerAddressEditActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+
+        <activity
+            android:name="com.gawilive.mall.activity.BuyerAddressActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.gawilive.mall.activity.BuyerAddressEditActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+        <activity
+            android:name="com.gawilive.mall.activity.ShopHomeActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gawilive.mall.activity.GoodsRecordActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.gawilive.mall.activity.GoodsMakeOrderActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden" />
+
+        <activity
+            android:name="com.gawilive.mall.activity.BuyerOrderActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="com.gawilive.phonelive"
+                    android:pathPrefix="/buyerOrder"
+                    android:scheme="android" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.gawilive.mall.activity.SellerOrderActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.gawilive.mall.activity.SellerSendActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.gawilive.mall.activity.BuyerCommentActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.gawilive.mall.activity.BuyerCommentAppendActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.gawilive.mall.activity.BuyerOrderDetailActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gawilive.mall.activity.SellerOrderDetailActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gawilive.mall.activity.BuyerRefundApplyActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gawilive.mall.activity.BuyerRefundDetailActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gawilive.mall.activity.SellerRefundDetailActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gawilive.mall.activity.SellerRejectRefundActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gawilive.mall.activity.BuyerRefundOfficialActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gawilive.mall.activity.GoodsCommentActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gawilive.mall.activity.BuyerAccountActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gawilive.mall.activity.SellerAccountActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gawilive.mall.activity.BuyerCashActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gawilive.mall.activity.SellerCashActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gawilive.mall.activity.PayContentActivity1"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gawilive.mall.activity.PayContentActivity2"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.gawilive.mall.activity.PayContentPubActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gawilive.mall.activity.PayContentClassActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gawilive.mall.activity.PayContentDetailActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gawilive.mall.activity.GoodsSearchActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gawilive.mall.activity.OrderMessageActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gawilive.mall.activity.GoodsAddOutSideActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gawilive.mall.activity.GoodsCollectActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gawilive.mall.activity.SetManageClassActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gawilive.mall.activity.SellerAddPlatActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.gawilive.mall.activity.AreaSelectActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.LogisticsDetailsActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity.SellerAddressEditNewActivity"/>
+
+    </application>
+
+</manifest>

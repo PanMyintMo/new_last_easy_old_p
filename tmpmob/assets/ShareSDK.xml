@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DevInfor>
+<SinaWeibo AppKey="568898243" AppSecret="38a4f8204cc784f81f9f0daaf31e02e3" RedirectUrl="https://www.sharesdk.cn" />
+<Facebook ConsumerKey="1412473428822331" ConsumerSecret="a42f4f3f867dc947b9ed6020c2e93558" RedirectUrl="https://www.baidu.com/" />
+<Twitter ShareByAppClient="true" Enable="true" BypassApproval="true" IsUseV2="true" ConsumerKey="WjmQNOqQB5YwPTs3AcZXVXYn3" ConsumerSecret="CWEkJUeq1sTMt4OzKMo08iRe1OlK468NAVh0XBxNtFgvvjbRl4" CallbackUrl="https://www.mob.com" />
+<ShortMessage Enable="true" />
+<LinkedIn ApiKey="ejo5ibkye3vo" SecretKey="cC7B2jpxITqPLZ5M" RedirectUrl="https://www.sharesdk.cn" />
+<FacebookMessenger AppId="107704292745179" />
+<WhatsApp Enable="true" />
+<GooglePlus ShareByAppClient="true" Enable="true" OfficialVersion="default" ClientID="928162956671-6d4u7khhqiobt9fb1a60j1u68851phd0.apps.googleusercontent.com" RedirectUrl="https://localhost" />
+</DevInfor>

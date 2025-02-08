@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\new_last_easy_old_p\\TUIKit\\TUICore\\tuicore\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-v24\\values-v24.xml",
+            "map": [
+                {
+                    "source": "D:\\gradle-6.1.1-bin\\gradle-6.1.1\\caches\\transforms-2\\files-2.1\\e9806fc7d4c1972d383ccbbd7c949b89\\appcompat-1.3.1\\res\\values-v24\\values-v24.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,212",
+                        "endColumns": "156,134",
+                        "endOffsets": "207,342"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,87 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.tencent.qcloud.tuikit.timcommon"
+4    android:versionCode="220"
+5    android:versionName="20.2.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+8-->D:\new_last_easy_old_p\TUIKit\TIMCommon\timcommon\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="34" />
+9-->D:\new_last_easy_old_p\TUIKit\TIMCommon\timcommon\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+11-->D:\new_last_easy_old_p\TUIKit\TIMCommon\timcommon\src\main\AndroidManifest.xml:5:5-78
+11-->D:\new_last_easy_old_p\TUIKit\TIMCommon\timcommon\src\main\AndroidManifest.xml:5:22-76
+12
+13    <application>
+13-->D:\new_last_easy_old_p\TUIKit\TIMCommon\timcommon\src\main\AndroidManifest.xml:7:5-46:19
+14        <activity
+14-->D:\new_last_easy_old_p\TUIKit\TIMCommon\timcommon\src\main\AndroidManifest.xml:9:9-12:55
+15            android:name="com.tencent.qcloud.tuikit.timcommon.component.activities.SelectionActivity"
+15-->D:\new_last_easy_old_p\TUIKit\TIMCommon\timcommon\src\main\AndroidManifest.xml:10:17-106
+16            android:exported="true"
+16-->D:\new_last_easy_old_p\TUIKit\TIMCommon\timcommon\src\main\AndroidManifest.xml:11:13-36
+17            android:screenOrientation="portrait" />
+17-->D:\new_last_easy_old_p\TUIKit\TIMCommon\timcommon\src\main\AndroidManifest.xml:12:17-53
+18        <activity
+18-->D:\new_last_easy_old_p\TUIKit\TIMCommon\timcommon\src\main\AndroidManifest.xml:13:9-16:55
+19            android:name="com.tencent.qcloud.tuikit.timcommon.component.activities.ImageSelectActivity"
+19-->D:\new_last_easy_old_p\TUIKit\TIMCommon\timcommon\src\main\AndroidManifest.xml:14:17-108
+20            android:exported="true"
+20-->D:\new_last_easy_old_p\TUIKit\TIMCommon\timcommon\src\main\AndroidManifest.xml:15:13-36
+21            android:screenOrientation="portrait" />
+21-->D:\new_last_easy_old_p\TUIKit\TIMCommon\timcommon\src\main\AndroidManifest.xml:16:17-53
+22        <activity
+22-->D:\new_last_easy_old_p\TUIKit\TIMCommon\timcommon\src\main\AndroidManifest.xml:18:9-21:55
+23            android:name="com.tencent.qcloud.tuikit.timcommon.component.activities.SelectionMinimalistActivity"
+23-->D:\new_last_easy_old_p\TUIKit\TIMCommon\timcommon\src\main\AndroidManifest.xml:19:17-116
+24            android:exported="true"
+24-->D:\new_last_easy_old_p\TUIKit\TIMCommon\timcommon\src\main\AndroidManifest.xml:20:13-36
+25            android:screenOrientation="portrait" />
+25-->D:\new_last_easy_old_p\TUIKit\TIMCommon\timcommon\src\main\AndroidManifest.xml:21:17-53
+26        <activity
+26-->D:\new_last_easy_old_p\TUIKit\TIMCommon\timcommon\src\main\AndroidManifest.xml:22:9-25:55
+27            android:name="com.tencent.qcloud.tuikit.timcommon.component.activities.ImageSelectMinimalistActivity"
+27-->D:\new_last_easy_old_p\TUIKit\TIMCommon\timcommon\src\main\AndroidManifest.xml:23:17-118
+28            android:exported="true"
+28-->D:\new_last_easy_old_p\TUIKit\TIMCommon\timcommon\src\main\AndroidManifest.xml:24:13-36
+29            android:screenOrientation="portrait" />
+29-->D:\new_last_easy_old_p\TUIKit\TIMCommon\timcommon\src\main\AndroidManifest.xml:25:17-53
+30        <activity
+30-->D:\new_last_easy_old_p\TUIKit\TIMCommon\timcommon\src\main\AndroidManifest.xml:27:9-34:78
+31            android:name="com.tencent.qcloud.tuikit.timcommon.util.ActivityResultResolver$ActivityResultProxyActivity"
+31-->D:\new_last_easy_old_p\TUIKit\TIMCommon\timcommon\src\main\AndroidManifest.xml:28:17-123
+32            android:configChanges="orientation|keyboardHidden|screenSize"
+32-->D:\new_last_easy_old_p\TUIKit\TIMCommon\timcommon\src\main\AndroidManifest.xml:30:17-78
+33            android:exported="true"
+33-->D:\new_last_easy_old_p\TUIKit\TIMCommon\timcommon\src\main\AndroidManifest.xml:29:13-36
+34            android:launchMode="singleTask"
+34-->D:\new_last_easy_old_p\TUIKit\TIMCommon\timcommon\src\main\AndroidManifest.xml:32:17-48
+35            android:multiprocess="true"
+35-->D:\new_last_easy_old_p\TUIKit\TIMCommon\timcommon\src\main\AndroidManifest.xml:31:17-44
+36            android:theme="@style/CoreActivityTranslucent"
+36-->D:\new_last_easy_old_p\TUIKit\TIMCommon\timcommon\src\main\AndroidManifest.xml:33:17-63
+37            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+37-->D:\new_last_easy_old_p\TUIKit\TIMCommon\timcommon\src\main\AndroidManifest.xml:34:17-76
+38
+39        <provider
+39-->D:\new_last_easy_old_p\TUIKit\TIMCommon\timcommon\src\main\AndroidManifest.xml:36:9-44:20
+40            android:name="com.tencent.qcloud.tuikit.timcommon.util.FileProvider"
+40-->D:\new_last_easy_old_p\TUIKit\TIMCommon\timcommon\src\main\AndroidManifest.xml:37:17-85
+41            android:authorities="${applicationId}.timcommon.fileprovider"
+41-->D:\new_last_easy_old_p\TUIKit\TIMCommon\timcommon\src\main\AndroidManifest.xml:38:17-78
+42            android:exported="false"
+42-->D:\new_last_easy_old_p\TUIKit\TIMCommon\timcommon\src\main\AndroidManifest.xml:39:17-41
+43            android:grantUriPermissions="true" >
+43-->D:\new_last_easy_old_p\TUIKit\TIMCommon\timcommon\src\main\AndroidManifest.xml:40:17-51
+44            <meta-data
+44-->D:\new_last_easy_old_p\TUIKit\TIMCommon\timcommon\src\main\AndroidManifest.xml:41:13-43:64
+45                android:name="android.support.FILE_PROVIDER_PATHS"
+45-->D:\new_last_easy_old_p\TUIKit\TIMCommon\timcommon\src\main\AndroidManifest.xml:42:21-71
+46                android:resource="@xml/file_paths_public" />
+46-->D:\new_last_easy_old_p\TUIKit\TIMCommon\timcommon\src\main\AndroidManifest.xml:43:21-62
+47        </provider>
+48    </application>
+49
+50</manifest>

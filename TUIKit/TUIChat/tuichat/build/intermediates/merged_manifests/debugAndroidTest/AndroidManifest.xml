@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tencent.qcloud.tuikit.tuichat.test" >
+
+    <uses-sdk
+        android:minSdkVersion="24"
+        android:targetSdkVersion="34" />
+
+    <instrumentation
+        android:name="android.test.InstrumentationTestRunner"
+        android:functionalTest="false"
+        android:handleProfiling="false"
+        android:label="Tests for com.tencent.qcloud.tuikit.tuichat.test"
+        android:targetPackage="com.tencent.qcloud.tuikit.tuichat.test" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="false"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:debuggable="true"
+        android:extractNativeLibs="false"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true" >
+        <uses-library android:name="android.test.runner" />
+
+        <activity
+            android:name="com.tencent.qcloud.tuikit.tuichat.component.imagevideoscan.ImageVideoScanActivity"
+            android:configChanges="screenSize|keyboardHidden|orientation"
+            android:exported="true"
+            android:launchMode="singleTask" /> <!-- **************** Classic UI Start **************** -->
+        <activity
+            android:name="com.tencent.qcloud.tuikit.tuichat.classicui.page.MessageReplyDetailActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.tencent.qcloud.tuikit.tuichat.classicui.page.TUIForwardChatActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tencent.qcloud.tuikit.tuichat.classicui.page.TUIC2CChatActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.tencent.qcloud.tuikit.tuichat.classicui.page.TUIGroupChatActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing|stateHidden" />
+        <activity
+            android:name="com.tencent.qcloud.tuikit.tuichat.classicui.page.MessageReceiptDetailActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tencent.qcloud.tuikit.tuichat.component.camera.CameraActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" /> <!-- **************** Classic UI End **************** -->
+        <!-- **************** Minimalist UI Start **************** -->
+        <activity
+            android:name="com.tencent.qcloud.tuikit.tuichat.minimalistui.widget.messagepopmenu.ChatPopActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:theme="@style/ChatTransparentPopActivityStyle"
+            android:windowSoftInputMode="adjustNothing|stateHidden" />
+        <activity
+            android:name="com.tencent.qcloud.tuikit.tuichat.minimalistui.page.TUIC2CChatMinimalistActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing|stateHidden" />
+        <activity
+            android:name="com.tencent.qcloud.tuikit.tuichat.minimalistui.page.TUIGroupChatMinimalistActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing|stateHidden" />
+        <activity
+            android:name="com.tencent.qcloud.tuikit.tuichat.minimalistui.page.MessageDetailMinimalistActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tencent.qcloud.tuikit.tuichat.minimalistui.page.TUIForwardChatMinimalistActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tencent.qcloud.tuikit.timcommon.component.activities.SelectionActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tencent.qcloud.tuikit.timcommon.component.activities.ImageSelectActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tencent.qcloud.tuikit.timcommon.component.activities.SelectionMinimalistActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tencent.qcloud.tuikit.timcommon.component.activities.ImageSelectMinimalistActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.tencent.qcloud.tuikit.timcommon.util.ActivityResultResolver$ActivityResultProxyActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:multiprocess="true"
+            android:theme="@style/CoreActivityTranslucent"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+
+        <provider
+            android:name="com.tencent.qcloud.tuikit.timcommon.util.FileProvider"
+            android:authorities="com.tencent.qcloud.tuikit.tuichat.test.timcommon.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths_public" />
+        </provider>
+
+        <activity
+            android:name="com.tencent.qcloud.tuicore.permission.PermissionActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:theme="@style/CoreActivityTranslucent"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <activity
+            android:name="com.tencent.qcloud.tuicore.util.PermissionRequester$PermissionActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:multiprocess="true"
+            android:theme="@style/CoreActivityTranslucent"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+
+        <provider
+            android:name="com.tencent.qcloud.tuicore.ServiceInitializer"
+            android:authorities="com.tencent.qcloud.tuikit.tuichat.test.TUICore.Init"
+            android:enabled="true"
+            android:exported="true"
+            android:initOrder="99999" />
+    </application>
+
+</manifest>

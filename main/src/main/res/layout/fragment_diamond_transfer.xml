@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@android:color/transparent"
+    app:cardCornerRadius="@dimen/dp_10"
+    app:cardElevation="@dimen/dp_10">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F3F3F3"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Diamonds Balance -->
+        <TextView
+
+            android:id="@+id/tv_diamonds_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="120"
+            android:textColor="#FF0000"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/tv_diamonds_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="24dp"
+            android:gravity="center"
+            android:text="Diamonds"
+            android:textColor="#666666"
+            android:textSize="14sp" />
+
+        <!-- Transfer to Section -->
+        <TextView
+            android:id="@+id/tv_transfer_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Transfer to"
+            android:textColor="#333333"
+            android:textSize="18sp" />
+
+        <!-- Transfer ID Input -->
+
+
+        <EditText
+            android:id="@+id/et_receiver_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_weight="1"
+            android:inputType="number"
+            android:background="@color/gray3"
+            android:drawableEnd="@mipmap/id_no"
+            android:hint="Enter Transfer ID Number"
+            android:padding="12dp"
+
+            android:textSize="14sp" />
+
+        <!-- Diamonds Amount Input -->
+        <EditText
+            android:id="@+id/et_diamonds_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:background="@color/gray3"
+            android:drawableEnd="@mipmap/s_diamond"
+            android:hint="Diamonds Amount"
+            android:inputType="number"
+            android:padding="12dp"
+            android:textSize="14sp" />
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            >
+
+            <!-- EditText for password input -->
+            <EditText
+                android:id="@+id/et_password"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/gray3"
+                android:gravity="center_vertical"
+                android:hint="Enter Your Password..."
+                android:inputType="number"
+                android:paddingLeft="12dp"
+
+                android:paddingRight="40dp"
+                app:passwordToggleEnabled="true"
+                android:singleLine="true"
+
+                android:textSize="14sp" />
+
+            <!-- Eye toggle for showing/hiding password -->
+            <ImageView
+                android:id="@+id/iv_password_toggle"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:src="@mipmap/password" />
+        </RelativeLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_2">
+
+        </Space>
+        <!-- Forgot Password -->
+        <TextView
+            android:id="@+id/tv_forgot_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginBottom="24dp"
+            android:gravity="end"
+            android:text="Forgot Password?"
+            android:textColor="#FF0000"
+            android:textSize="14sp" />
+
+        <!-- Transfer Button -->
+        <Button
+            android:id="@+id/btnTransfer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/disabled_color"
+            android:padding="12dp"
+            android:text="Transfer"
+            android:enabled="false"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

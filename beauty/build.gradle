@@ -1,0 +1,32 @@
+apply plugin: 'com.android.library'
+
+apply from : '../version.gradle'
+
+android {
+
+    defaultConfig {
+        manifestPlaceholders = rootProject.ext.manifestPlaceholders
+        ndk {
+            abiFilters "arm64-v8a" //"armeabi-v7a", "arm64-v8a", "x86_64"
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+repositories {
+    flatDir {
+        dirs 'libs','../libs'
+    }
+}
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile rootProject.ext.dependencies["appcompat-v7"]
+    compile rootProject.ext.dependencies["recyclerview-v7"]
+    compile project(':common')
+    compile(name: 'MHSDK-4.2.1', ext: 'aar')
+}

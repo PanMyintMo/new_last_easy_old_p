@@ -1,0 +1,97 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.tencent.qcloud.tuicore.test" >
+4
+5    <uses-sdk
+5-->D:\new_last_easy_old_p\TUIKit\TUICore\tuicore\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger18211858098637968213.xml:5:5-74
+6        android:minSdkVersion="24"
+6-->D:\new_last_easy_old_p\TUIKit\TUICore\tuicore\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger18211858098637968213.xml:5:15-41
+7        android:targetSdkVersion="34" />
+7-->D:\new_last_easy_old_p\TUIKit\TUICore\tuicore\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger18211858098637968213.xml:5:42-71
+8
+9    <instrumentation
+9-->D:\new_last_easy_old_p\TUIKit\TUICore\tuicore\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger18211858098637968213.xml:11:5-15:81
+10        android:name="android.test.InstrumentationTestRunner"
+10-->D:\new_last_easy_old_p\TUIKit\TUICore\tuicore\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger18211858098637968213.xml:11:22-75
+11        android:functionalTest="false"
+11-->D:\new_last_easy_old_p\TUIKit\TUICore\tuicore\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger18211858098637968213.xml:14:22-52
+12        android:handleProfiling="false"
+12-->D:\new_last_easy_old_p\TUIKit\TUICore\tuicore\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger18211858098637968213.xml:13:22-53
+13        android:label="Tests for com.tencent.qcloud.tuicore.test"
+13-->D:\new_last_easy_old_p\TUIKit\TUICore\tuicore\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger18211858098637968213.xml:15:22-79
+14        android:targetPackage="com.tencent.qcloud.tuicore.test" />
+14-->D:\new_last_easy_old_p\TUIKit\TUICore\tuicore\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger18211858098637968213.xml:12:22-77
+15
+16    <uses-permission android:name="android.permission.INTERNET" />
+16-->[com.tencent.imsdk:imsdk-plus:8.0.5895] D:\gradle-6.1.1-bin\gradle-6.1.1\caches\transforms-2\files-2.1\722a7c1d3fa00001b49c2720422473c4\jetified-imsdk-plus-8.0.5895\AndroidManifest.xml:9:5-67
+16-->[com.tencent.imsdk:imsdk-plus:8.0.5895] D:\gradle-6.1.1-bin\gradle-6.1.1\caches\transforms-2\files-2.1\722a7c1d3fa00001b49c2720422473c4\jetified-imsdk-plus-8.0.5895\AndroidManifest.xml:9:22-64
+17    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+17-->[com.tencent.imsdk:imsdk-plus:8.0.5895] D:\gradle-6.1.1-bin\gradle-6.1.1\caches\transforms-2\files-2.1\722a7c1d3fa00001b49c2720422473c4\jetified-imsdk-plus-8.0.5895\AndroidManifest.xml:10:5-79
+17-->[com.tencent.imsdk:imsdk-plus:8.0.5895] D:\gradle-6.1.1-bin\gradle-6.1.1\caches\transforms-2\files-2.1\722a7c1d3fa00001b49c2720422473c4\jetified-imsdk-plus-8.0.5895\AndroidManifest.xml:10:22-76
+18    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+18-->[com.tencent.imsdk:imsdk-plus:8.0.5895] D:\gradle-6.1.1-bin\gradle-6.1.1\caches\transforms-2\files-2.1\722a7c1d3fa00001b49c2720422473c4\jetified-imsdk-plus-8.0.5895\AndroidManifest.xml:11:5-76
+18-->[com.tencent.imsdk:imsdk-plus:8.0.5895] D:\gradle-6.1.1-bin\gradle-6.1.1\caches\transforms-2\files-2.1\722a7c1d3fa00001b49c2720422473c4\jetified-imsdk-plus-8.0.5895\AndroidManifest.xml:11:22-73
+19
+20    <application
+20-->D:\new_last_easy_old_p\TUIKit\TUICore\tuicore\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger18211858098637968213.xml:7:5-9:19
+21        android:allowBackup="false"
+21-->[com.tencent.imsdk:imsdk-plus:8.0.5895] D:\gradle-6.1.1-bin\gradle-6.1.1\caches\transforms-2\files-2.1\722a7c1d3fa00001b49c2720422473c4\jetified-imsdk-plus-8.0.5895\AndroidManifest.xml:14:9-36
+22        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+22-->[androidx.core:core:1.5.0] D:\gradle-6.1.1-bin\gradle-6.1.1\caches\transforms-2\files-2.1\fe29af0c4bb1127c749d0c9b6af0056c\core-1.5.0\AndroidManifest.xml:24:18-86
+23        android:debuggable="true"
+23-->D:\new_last_easy_old_p\TUIKit\TUICore\tuicore\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger18211858098637968213.xml:7:18-43
+24        android:extractNativeLibs="false"
+25        android:supportsRtl="true"
+25-->[com.tencent.imsdk:imsdk-plus:8.0.5895] D:\gradle-6.1.1-bin\gradle-6.1.1\caches\transforms-2\files-2.1\722a7c1d3fa00001b49c2720422473c4\jetified-imsdk-plus-8.0.5895\AndroidManifest.xml:15:9-35
+26        android:usesCleartextTraffic="true" >
+26-->[com.tencent.imsdk:imsdk-plus:8.0.5895] D:\gradle-6.1.1-bin\gradle-6.1.1\caches\transforms-2\files-2.1\722a7c1d3fa00001b49c2720422473c4\jetified-imsdk-plus-8.0.5895\AndroidManifest.xml:16:9-44
+27        <uses-library android:name="android.test.runner" />
+27-->D:\new_last_easy_old_p\TUIKit\TUICore\tuicore\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger18211858098637968213.xml:8:9-60
+27-->D:\new_last_easy_old_p\TUIKit\TUICore\tuicore\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger18211858098637968213.xml:8:23-57
+28
+29        <activity
+29-->[__tested_artifact__::TUIKit:TUICore:tuicore] D:\new_last_easy_old_p\TUIKit\TUICore\tuicore\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:9-18:75
+30            android:name="com.tencent.qcloud.tuicore.permission.PermissionActivity"
+30-->[__tested_artifact__::TUIKit:TUICore:tuicore] D:\new_last_easy_old_p\TUIKit\TUICore\tuicore\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-84
+31            android:configChanges="orientation|keyboardHidden|screenSize"
+31-->[__tested_artifact__::TUIKit:TUICore:tuicore] D:\new_last_easy_old_p\TUIKit\TUICore\tuicore\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-74
+32            android:exported="true"
+32-->[__tested_artifact__::TUIKit:TUICore:tuicore] D:\new_last_easy_old_p\TUIKit\TUICore\tuicore\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:13-36
+33            android:launchMode="singleTask"
+33-->[__tested_artifact__::TUIKit:TUICore:tuicore] D:\new_last_easy_old_p\TUIKit\TUICore\tuicore\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:13-44
+34            android:theme="@style/CoreActivityTranslucent"
+34-->[__tested_artifact__::TUIKit:TUICore:tuicore] D:\new_last_easy_old_p\TUIKit\TUICore\tuicore\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:13-59
+35            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+35-->[__tested_artifact__::TUIKit:TUICore:tuicore] D:\new_last_easy_old_p\TUIKit\TUICore\tuicore\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:13-72
+36        <activity
+36-->[__tested_artifact__::TUIKit:TUICore:tuicore] D:\new_last_easy_old_p\TUIKit\TUICore\tuicore\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:9-26:75
+37            android:name="com.tencent.qcloud.tuicore.util.PermissionRequester$PermissionActivity"
+37-->[__tested_artifact__::TUIKit:TUICore:tuicore] D:\new_last_easy_old_p\TUIKit\TUICore\tuicore\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:13-98
+38            android:configChanges="orientation|keyboardHidden|screenSize"
+38-->[__tested_artifact__::TUIKit:TUICore:tuicore] D:\new_last_easy_old_p\TUIKit\TUICore\tuicore\build\intermediates\library_manifest\debug\AndroidManifest.xml:21:13-74
+39            android:exported="true"
+39-->[__tested_artifact__::TUIKit:TUICore:tuicore] D:\new_last_easy_old_p\TUIKit\TUICore\tuicore\build\intermediates\library_manifest\debug\AndroidManifest.xml:22:13-36
+40            android:launchMode="singleTask"
+40-->[__tested_artifact__::TUIKit:TUICore:tuicore] D:\new_last_easy_old_p\TUIKit\TUICore\tuicore\build\intermediates\library_manifest\debug\AndroidManifest.xml:23:13-44
+41            android:multiprocess="true"
+41-->[__tested_artifact__::TUIKit:TUICore:tuicore] D:\new_last_easy_old_p\TUIKit\TUICore\tuicore\build\intermediates\library_manifest\debug\AndroidManifest.xml:24:13-40
+42            android:theme="@style/CoreActivityTranslucent"
+42-->[__tested_artifact__::TUIKit:TUICore:tuicore] D:\new_last_easy_old_p\TUIKit\TUICore\tuicore\build\intermediates\library_manifest\debug\AndroidManifest.xml:25:13-59
+43            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+43-->[__tested_artifact__::TUIKit:TUICore:tuicore] D:\new_last_easy_old_p\TUIKit\TUICore\tuicore\build\intermediates\library_manifest\debug\AndroidManifest.xml:26:13-72
+44
+45        <provider
+45-->[__tested_artifact__::TUIKit:TUICore:tuicore] D:\new_last_easy_old_p\TUIKit\TUICore\tuicore\build\intermediates\library_manifest\debug\AndroidManifest.xml:28:9-33:41
+46            android:name="com.tencent.qcloud.tuicore.ServiceInitializer"
+46-->[__tested_artifact__::TUIKit:TUICore:tuicore] D:\new_last_easy_old_p\TUIKit\TUICore\tuicore\build\intermediates\library_manifest\debug\AndroidManifest.xml:29:13-73
+47            android:authorities="com.tencent.qcloud.tuicore.test.TUICore.Init"
+47-->[__tested_artifact__::TUIKit:TUICore:tuicore] D:\new_last_easy_old_p\TUIKit\TUICore\tuicore\build\intermediates\library_manifest\debug\AndroidManifest.xml:30:13-64
+48            android:enabled="true"
+48-->[__tested_artifact__::TUIKit:TUICore:tuicore] D:\new_last_easy_old_p\TUIKit\TUICore\tuicore\build\intermediates\library_manifest\debug\AndroidManifest.xml:31:13-35
+49            android:exported="true"
+49-->[__tested_artifact__::TUIKit:TUICore:tuicore] D:\new_last_easy_old_p\TUIKit\TUICore\tuicore\build\intermediates\library_manifest\debug\AndroidManifest.xml:32:13-36
+50            android:initOrder="99999" />
+50-->[__tested_artifact__::TUIKit:TUICore:tuicore] D:\new_last_easy_old_p\TUIKit\TUICore\tuicore\build\intermediates\library_manifest\debug\AndroidManifest.xml:33:13-38
+51    </application>
+52
+53</manifest>

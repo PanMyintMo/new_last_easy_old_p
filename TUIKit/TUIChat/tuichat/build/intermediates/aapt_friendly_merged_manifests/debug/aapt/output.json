@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "applicationId": "com.tencent.qcloud.tuikit.tuichat",
+  "variantType": "LIBRARY",
+  "elements": [
+    {
+      "outputType": {
+        "type": "AAPT_FRIENDLY_MERGED_MANIFESTS"
+      },
+      "apkData": {
+        "type": "MAIN",
+        "splits": [],
+        "versionCode": 220,
+        "versionName": "20.2.0",
+        "outputFile": "tuichat-debug.aar",
+        "fullName": "debug",
+        "baseName": "debug",
+        "dirName": ""
+      },
+      "path": "AndroidManifest.xml",
+      "properties": {
+        "packageId": "com.tencent.qcloud.tuikit.tuichat",
+        "split": ""
+      }
+    }
+  ]
+}

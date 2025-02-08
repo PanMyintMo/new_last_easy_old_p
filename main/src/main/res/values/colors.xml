@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="enabled_color">#00AD73</color> <!-- Green for enabled -->
+    <color name="disabled_color">#B3B3B3</color> <!-- Gray for disabled -->
+    <color name="enable_color_transfer">#AE02B8</color>
+</resources>

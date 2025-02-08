@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="16dp"
+            android:layout_height="75dp">
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+            <TextView
+                    android:id="@+id/tvDesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="top up"
+                    android:textStyle="bold"
+                    android:textColor="#4C515B"
+                    android:textSize="15sp"
+                    />
+
+            <TextView
+                    android:id="@+id/tvTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="May 21, 2024 14:30:31"
+                    android:textColor="#4C515B"
+                    android:textSize="13sp"
+                    />
+        </LinearLayout>
+
+        <TextView
+                android:id="@+id/tvMoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1000"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:textColor="#4C515B"
+                android:textSize="14sp"
+                />
+    </RelativeLayout>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#E6EAF2"
+            />
+</LinearLayout>

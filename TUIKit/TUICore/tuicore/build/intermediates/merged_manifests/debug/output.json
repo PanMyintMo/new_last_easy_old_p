@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "applicationId": "com.tencent.qcloud.tuicore",
+  "variantType": "LIBRARY",
+  "elements": [
+    {
+      "outputType": {
+        "type": "MERGED_MANIFESTS"
+      },
+      "apkData": {
+        "type": "MAIN",
+        "splits": [],
+        "versionCode": 220,
+        "versionName": "20.2.0",
+        "outputFile": "tuicore-debug.aar",
+        "fullName": "debug",
+        "baseName": "debug",
+        "dirName": ""
+      },
+      "path": "../../library_manifest/debug/AndroidManifest.xml",
+      "properties": {
+        "packageId": "com.tencent.qcloud.tuicore",
+        "split": ""
+      }
+    }
+  ]
+}

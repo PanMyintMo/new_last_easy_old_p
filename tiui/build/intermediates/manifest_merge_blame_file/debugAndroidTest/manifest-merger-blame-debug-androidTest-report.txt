@@ -1,0 +1,69 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="cn.tillusory.tiui.test" >
+4
+5    <uses-sdk
+5-->D:\new_last_easy_old_p\tiui\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger14299475016193037442.xml:5:5-74
+6        android:minSdkVersion="24"
+6-->D:\new_last_easy_old_p\tiui\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger14299475016193037442.xml:5:15-41
+7        android:targetSdkVersion="34" />
+7-->D:\new_last_easy_old_p\tiui\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger14299475016193037442.xml:5:42-71
+8
+9    <instrumentation
+9-->D:\new_last_easy_old_p\tiui\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger14299475016193037442.xml:11:5-15:72
+10        android:name="android.test.InstrumentationTestRunner"
+10-->D:\new_last_easy_old_p\tiui\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger14299475016193037442.xml:11:22-75
+11        android:functionalTest="false"
+11-->D:\new_last_easy_old_p\tiui\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger14299475016193037442.xml:14:22-52
+12        android:handleProfiling="false"
+12-->D:\new_last_easy_old_p\tiui\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger14299475016193037442.xml:13:22-53
+13        android:label="Tests for cn.tillusory.tiui.test"
+13-->D:\new_last_easy_old_p\tiui\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger14299475016193037442.xml:15:22-70
+14        android:targetPackage="cn.tillusory.tiui.test" />
+14-->D:\new_last_easy_old_p\tiui\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger14299475016193037442.xml:12:22-68
+15
+16    <uses-permission android:name="android.permission.INTERNET" />
+16-->[__tested_artifact__::tiui] D:\new_last_easy_old_p\tiui\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:5-67
+16-->[__tested_artifact__::tiui] D:\new_last_easy_old_p\tiui\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:22-64
+17    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+17-->[__tested_artifact__::tiui] D:\new_last_easy_old_p\tiui\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:5-79
+17-->[__tested_artifact__::tiui] D:\new_last_easy_old_p\tiui\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:22-76
+18    <uses-permission android:name="android.permission.CAMERA" />
+18-->[ti-sdk.aar] D:\gradle-6.1.1-bin\gradle-6.1.1\caches\transforms-2\files-2.1\741429a458024113f215a1fd9eab1eec\jetified-ti-sdk\AndroidManifest.xml:10:5-65
+18-->[ti-sdk.aar] D:\gradle-6.1.1-bin\gradle-6.1.1\caches\transforms-2\files-2.1\741429a458024113f215a1fd9eab1eec\jetified-ti-sdk\AndroidManifest.xml:10:22-62
+19
+20    <uses-feature
+20-->[ti-sdk.aar] D:\gradle-6.1.1-bin\gradle-6.1.1\caches\transforms-2\files-2.1\741429a458024113f215a1fd9eab1eec\jetified-ti-sdk\AndroidManifest.xml:13:5-15:35
+21        android:glEsVersion="0x00020000"
+21-->[ti-sdk.aar] D:\gradle-6.1.1-bin\gradle-6.1.1\caches\transforms-2\files-2.1\741429a458024113f215a1fd9eab1eec\jetified-ti-sdk\AndroidManifest.xml:14:9-41
+22        android:required="true" />
+22-->[ti-sdk.aar] D:\gradle-6.1.1-bin\gradle-6.1.1\caches\transforms-2\files-2.1\741429a458024113f215a1fd9eab1eec\jetified-ti-sdk\AndroidManifest.xml:15:9-32
+23
+24    <application
+24-->D:\new_last_easy_old_p\tiui\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger14299475016193037442.xml:7:5-9:19
+25        android:allowBackup="true"
+25-->[com.hwangjr.rxbus:rxbus:1.0.6] D:\gradle-6.1.1-bin\gradle-6.1.1\caches\transforms-2\files-2.1\b67fdab12a8fe698a62fa5c1491ff7e4\jetified-rxbus-1.0.6\AndroidManifest.xml:10:9-35
+26        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+26-->[androidx.core:core:1.3.1] D:\gradle-6.1.1-bin\gradle-6.1.1\caches\transforms-2\files-2.1\35dbf7de7936e0cf9a0d42f5736200c4\core-1.3.1\AndroidManifest.xml:24:18-86
+27        android:debuggable="true"
+27-->D:\new_last_easy_old_p\tiui\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger14299475016193037442.xml:7:18-43
+28        android:extractNativeLibs="false"
+29        android:networkSecurityConfig="@xml/network_security_config"
+29-->[ti-sdk.aar] D:\gradle-6.1.1-bin\gradle-6.1.1\caches\transforms-2\files-2.1\741429a458024113f215a1fd9eab1eec\jetified-ti-sdk\AndroidManifest.xml:18:9-69
+30        android:supportsRtl="true" >
+30-->[com.hwangjr.rxbus:rxbus:1.0.6] D:\gradle-6.1.1-bin\gradle-6.1.1\caches\transforms-2\files-2.1\b67fdab12a8fe698a62fa5c1491ff7e4\jetified-rxbus-1.0.6\AndroidManifest.xml:11:9-35
+31        <uses-library android:name="android.test.runner" />
+31-->D:\new_last_easy_old_p\tiui\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger14299475016193037442.xml:8:9-60
+31-->D:\new_last_easy_old_p\tiui\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger14299475016193037442.xml:8:23-57
+32
+33        <provider
+33-->[com.liulishuo.okdownload:okdownload:1.0.5] D:\gradle-6.1.1-bin\gradle-6.1.1\caches\transforms-2\files-2.1\91d40a75b37744ee42e64967881b4297\jetified-okdownload-1.0.5\AndroidManifest.xml:9:9-12:40
+34            android:name="com.liulishuo.okdownload.OkDownloadProvider"
+34-->[com.liulishuo.okdownload:okdownload:1.0.5] D:\gradle-6.1.1-bin\gradle-6.1.1\caches\transforms-2\files-2.1\91d40a75b37744ee42e64967881b4297\jetified-okdownload-1.0.5\AndroidManifest.xml:10:13-71
+35            android:authorities="cn.tillusory.tiui.test.com.liulishuo.okdownload"
+35-->[com.liulishuo.okdownload:okdownload:1.0.5] D:\gradle-6.1.1-bin\gradle-6.1.1\caches\transforms-2\files-2.1\91d40a75b37744ee42e64967881b4297\jetified-okdownload-1.0.5\AndroidManifest.xml:11:13-76
+36            android:exported="false" />
+36-->[com.liulishuo.okdownload:okdownload:1.0.5] D:\gradle-6.1.1-bin\gradle-6.1.1\caches\transforms-2\files-2.1\91d40a75b37744ee42e64967881b4297\jetified-okdownload-1.0.5\AndroidManifest.xml:12:13-37
+37    </application>
+38
+39</manifest>

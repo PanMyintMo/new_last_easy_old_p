@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_height="match_parent">
+
+    <include layout="@layout/view_title"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+        <com.hjq.shape.layout.ShapeLinearLayout
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginVertical="29dp"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                app:shape_radius="6dp"
+                app:shape_solidColor="@android:color/white"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/string_fkmoney"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginStart="16dp"
+                    android:textColor="#8B919C"
+                    />
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:orientation="horizontal"
+                    android:layout_marginHorizontal="16dp"
+                    >
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ks"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        android:textColor="#24293C"
+                        />
+
+                <EditText
+                        android:id="@+id/edMoney"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="35sp"
+                        android:textStyle="bold"
+                        android:textColorHint="#4D666666"
+                        android:layout_marginStart="5dp"
+                        android:inputType="numberDecimal"
+                        android:hint="@string/string_input_pay"
+                        android:background="@color/transparent"
+                        />
+            </LinearLayout>
+
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginTop="11dp"
+                    android:background="#E6EAF2"
+                    />
+        </com.hjq.shape.layout.ShapeLinearLayout>
+
+        <com.hjq.shape.view.ShapeTextView
+                android:id="@+id/addBank"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="@dimen/dp_30"
+                app:shape_radius="@dimen/dp_4"
+                android:textSize="@dimen/sp_14"
+                android:text="@string/string_qr_fk"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                app:shape_solidColor="@color/colorAccent"
+                android:layout_marginHorizontal="24dp"/>
+    </LinearLayout>
+</LinearLayout>

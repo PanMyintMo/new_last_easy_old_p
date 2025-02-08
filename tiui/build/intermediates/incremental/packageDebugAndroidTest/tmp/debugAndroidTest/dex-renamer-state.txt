@@ -1,0 +1,7 @@
+#Wed Feb 05 11:06:45 MMT 2025
+base.1=D\:\\new_last_easy_old_p\\tiui\\build\\intermediates\\dex\\debugAndroidTest\\mergeProjectDexDebugAndroidTest\\classes.dex
+path.1=classes.dex
+base.0=D\:\\new_last_easy_old_p\\tiui\\build\\intermediates\\dex\\debugAndroidTest\\mergeExtDexDebugAndroidTest\\classes.dex
+renamed.1=classes2.dex
+renamed.0=classes.dex
+path.0=classes.dex

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="258dp">
+
+        <FrameLayout
+            android:id="@+id/fl_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="19dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/view_new_head_bg" />
+
+        <RelativeLayout
+            android:id="@+id/llHead"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fl_top"
+            android:layout_marginHorizontal="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_16">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/main_active"
+                    android:textColor="#ffffffff"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="11dp"
+                    android:text="@string/new_43"
+                    android:textColor="#ccffffff"
+                    android:textSize="11sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/btn_msg"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:onClick="mainClick"
+                android:padding="3dp"
+                android:src="@mipmap/ic_new_msg" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/llHead"
+            android:layout_marginHorizontal="16dp"
+            android:layout_marginTop="13dp">
+
+            <com.hjq.shape.view.ShapeTextView
+                android:id="@+id/btn_search"
+                android:layout_width="match_parent"
+                android:layout_height="31.5dp"
+                android:layout_marginEnd="13dp"
+                android:layout_toLeftOf="@id/tvPush"
+                android:drawableLeft="@mipmap/ic_new_search"
+                android:drawablePadding="6dp"
+                android:gravity="center_vertical"
+                android:hint="@string/active_topic_01"
+                android:paddingHorizontal="@dimen/dp_14"
+                android:textSize="13sp"
+                app:shape_radius="3dp"
+                app:shape_solidColor="@android:color/white" />
+
+            <com.hjq.shape.view.ShapeTextView
+                android:id="@+id/tvPush"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:paddingHorizontal="14dp"
+                android:paddingVertical="5.5dp"
+                android:text="@string/publish"
+                android:textColor="@color/colorAccent"
+                app:shape_radius="3dp"
+                app:shape_solidColor="@android:color/white" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <com.hjq.shape.layout.ShapeLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="-130dp"
+        android:orientation="vertical"
+        app:shape_solidColor="@android:color/white"
+        app:shape_topLeftRadius="12dp"
+        app:shape_topRightRadius="12dp">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginTop="13dp"
+                    android:background="@mipmap/ic_hot_ht_bg">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:text="@string/active_topic_08"
+                        android:textColor="#ff333333"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/btn_all_topic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="@dimen/dp_16"
+                        android:drawableRight="@mipmap/ic_new_more"
+                        android:drawablePadding="6dp"
+                        android:text="@string/chat_minimalist_pop_more"
+                        android:textColor="#ffaab0bb"
+                        android:textSize="11sp" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerView_topic"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/btn_all_topic"
+                        android:layout_marginTop="4dp"
+                    android:layout_marginBottom="8dp"
+                    android:clipToPadding="false"
+                    android:orientation="horizontal" />
+                </RelativeLayout>
+
+
+                <net.lucode.hackware.magicindicator.MagicIndicator
+                    android:id="@+id/indicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="37dp"
+                    android:layout_marginHorizontal="@dimen/dp_16" />
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/viewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:overScrollMode="never" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </com.hjq.shape.layout.ShapeLinearLayout>
+</LinearLayout>

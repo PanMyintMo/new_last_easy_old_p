@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="game_zjh">Zhiyong Sanzhang</string>
+    <string name="game_zp">Lucky turntable </string>
+    <string name="game_choose_game">Choose a game</string>
+    <string name="game_wait_start">Starting soon, please wait</string>
+    <string name="game_charge">Recharge</string>
+    <string name="game_win">Winning Oh</string>
+    <string name="game_wait_end">Please wait for the game to end</string>
+    <string name="game_wan">ten thousand</string>
+    <string name="game_zjh_role_name_1">Da Qiao x2</string>
+    <string name="game_zjh_role_name_2">Diao Chan x2</string>
+    <string name="game_zjh_role_name_3">Xiao Qiao x2</string>
+    <string name="game_start_support">Start supporting</string>
+    <string name="game_show_result">Revealing Results</string>
+    <string name="game_hd_role_name_1">Roberts x2</string>
+    <string name="game_hd_role_name_0">Draw x2</string>
+    <string name="game_hd_role_name_2">Kidd x2</string>
+    <string name="game_nz_name_1">Star x2</string>
+    <string name="game_nz_name_2">Ball x2</string>
+    <string name="game_nz_name_3">Zai Zai x2</string>
+    <string name="game_nz_name_1_2">star</string>
+    <string name="game_nz_name_2_2">Ball</string>
+    <string name="game_nz_name_3_2">Zai Zai</string>
+    <string name="game_nz_sz_sf_record">Win or lose trend chart</string>
+    <string name="game_water">running water</string>
+    <string name="game_nz_apply_sz">Apply for Shangxia Village</string>
+    <string name="game_nz_apply_sz_1">Apply for Shangzhuang</string>
+    <string name="game_nz_apply_sz_2">Xiazhuang</string>
+    <string name="game_nz_gx">congratulations</string>
+    <string name="game_nz_sz">Shangzhuang</string>
+    <string name="game_nz_ben">My family</string>
+    <string name="game_nz_zhuang">Banker</string>
+    <string name="game_nz_sz_xz">Insufficient balance, down from the bank</string>
+    <string name="game_nz_sheng">win</string>
+    <string name="game_nz_fu">negative</string>
+    <string name="game_nz_sz_ls">Banker\'s Flowing Water</string>
+    <string name="game_nz_sz_ls_jh">Bureau number</string>
+    <string name="game_nz_sz_ls_px">Brand type</string>
+    <string name="game_nz_sz_ls_js">balance</string>
+    <string name="game_nz_sz_list">Shangzhuang List</string>
+    <string name="game_nz_sz_order">order</string>
+    <string name="game_nz_sz_player">player</string>
+    <string name="game_nz_sz_coin">Game currency</string>
+    <string name="game_nz_zhuang_1">Zhuang</string>
+    <string name="game_nz_apply_sz_yajin">Shangzhuang deposit</string>
+    <string name="game_nz_apply_sz_yajin_empty">Please fill in the deposit for Shangzhuang</string>
+    <string name="game_nz_apply_sz_yajin_zd">minimum</string>
+    <string name="game_lose_tip">Victory and defeat are common affairs in military families</string>
+
+</resources>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <include layout="@layout/view_title"/>
+    <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            app:spanCount="2"
+            android:layout_marginTop="6dp"
+            android:layout_marginHorizontal="@dimen/dp_5"
+            tools:listitem="@layout/item_prize_list"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+</LinearLayout>

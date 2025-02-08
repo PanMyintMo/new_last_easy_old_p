@@ -1,0 +1,60 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.tencent.qcloud.tuicore"
+4    android:versionCode="220"
+5    android:versionName="20.2.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+8-->D:\new_last_easy_old_p\TUIKit\TUICore\tuicore\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="34" />
+9-->D:\new_last_easy_old_p\TUIKit\TUICore\tuicore\src\main\AndroidManifest.xml
+10
+11    <application>
+11-->D:\new_last_easy_old_p\TUIKit\TUICore\tuicore\src\main\AndroidManifest.xml:6:5-31:19
+12        <activity
+12-->D:\new_last_easy_old_p\TUIKit\TUICore\tuicore\src\main\AndroidManifest.xml:7:9-13:75
+13            android:name="com.tencent.qcloud.tuicore.permission.PermissionActivity"
+13-->D:\new_last_easy_old_p\TUIKit\TUICore\tuicore\src\main\AndroidManifest.xml:8:13-84
+14            android:configChanges="orientation|keyboardHidden|screenSize"
+14-->D:\new_last_easy_old_p\TUIKit\TUICore\tuicore\src\main\AndroidManifest.xml:9:13-74
+15            android:exported="true"
+15-->D:\new_last_easy_old_p\TUIKit\TUICore\tuicore\src\main\AndroidManifest.xml:11:13-36
+16            android:launchMode="singleTask"
+16-->D:\new_last_easy_old_p\TUIKit\TUICore\tuicore\src\main\AndroidManifest.xml:10:13-44
+17            android:theme="@style/CoreActivityTranslucent"
+17-->D:\new_last_easy_old_p\TUIKit\TUICore\tuicore\src\main\AndroidManifest.xml:12:13-59
+18            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+18-->D:\new_last_easy_old_p\TUIKit\TUICore\tuicore\src\main\AndroidManifest.xml:13:13-72
+19        <activity
+19-->D:\new_last_easy_old_p\TUIKit\TUICore\tuicore\src\main\AndroidManifest.xml:15:9-22:75
+20            android:name="com.tencent.qcloud.tuicore.util.PermissionRequester$PermissionActivity"
+20-->D:\new_last_easy_old_p\TUIKit\TUICore\tuicore\src\main\AndroidManifest.xml:16:13-98
+21            android:configChanges="orientation|keyboardHidden|screenSize"
+21-->D:\new_last_easy_old_p\TUIKit\TUICore\tuicore\src\main\AndroidManifest.xml:17:13-74
+22            android:exported="true"
+22-->D:\new_last_easy_old_p\TUIKit\TUICore\tuicore\src\main\AndroidManifest.xml:20:13-36
+23            android:launchMode="singleTask"
+23-->D:\new_last_easy_old_p\TUIKit\TUICore\tuicore\src\main\AndroidManifest.xml:19:13-44
+24            android:multiprocess="true"
+24-->D:\new_last_easy_old_p\TUIKit\TUICore\tuicore\src\main\AndroidManifest.xml:18:13-40
+25            android:theme="@style/CoreActivityTranslucent"
+25-->D:\new_last_easy_old_p\TUIKit\TUICore\tuicore\src\main\AndroidManifest.xml:21:13-59
+26            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+26-->D:\new_last_easy_old_p\TUIKit\TUICore\tuicore\src\main\AndroidManifest.xml:22:13-72
+27
+28        <provider
+28-->D:\new_last_easy_old_p\TUIKit\TUICore\tuicore\src\main\AndroidManifest.xml:24:9-29:38
+29            android:name="com.tencent.qcloud.tuicore.ServiceInitializer"
+29-->D:\new_last_easy_old_p\TUIKit\TUICore\tuicore\src\main\AndroidManifest.xml:25:13-73
+30            android:authorities="${applicationId}.TUICore.Init"
+30-->D:\new_last_easy_old_p\TUIKit\TUICore\tuicore\src\main\AndroidManifest.xml:26:13-64
+31            android:enabled="true"
+31-->D:\new_last_easy_old_p\TUIKit\TUICore\tuicore\src\main\AndroidManifest.xml:28:13-35
+32            android:exported="true"
+32-->D:\new_last_easy_old_p\TUIKit\TUICore\tuicore\src\main\AndroidManifest.xml:29:13-36
+33            android:initOrder="99999" />
+33-->D:\new_last_easy_old_p\TUIKit\TUICore\tuicore\src\main\AndroidManifest.xml:27:13-38
+34    </application>
+35
+36</manifest>

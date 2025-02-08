@@ -1,0 +1,30 @@
+apply plugin: 'com.android.library'
+
+apply from : '../version.gradle'
+
+android {
+
+    defaultConfig {
+        manifestPlaceholders = rootProject.ext.manifestPlaceholders
+        ndk {
+            abiFilters "arm64-v8a" //"armeabi-v7a", "arm64-v8a", "x86_64"
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+repositories {
+    flatDir {
+        dirs 'libs','../libs'
+    }
+}
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    //common
+    compile project(':common')
+}

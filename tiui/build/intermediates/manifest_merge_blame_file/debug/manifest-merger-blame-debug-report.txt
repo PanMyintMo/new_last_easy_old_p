@@ -1,0 +1,21 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<!-- Copyright (c) 2018-2020 拓幻科技 - tillusory.cn. All rights reserved. -->
+3<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+4    package="cn.tillusory.tiui"
+5    android:versionCode="220"
+6    android:versionName="20.2.0" >
+7
+8    <uses-sdk
+9        android:minSdkVersion="24"
+9-->D:\new_last_easy_old_p\tiui\src\main\AndroidManifest.xml
+10        android:targetSdkVersion="34" />
+10-->D:\new_last_easy_old_p\tiui\src\main\AndroidManifest.xml
+11
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->D:\new_last_easy_old_p\tiui\src\main\AndroidManifest.xml:5:5-67
+12-->D:\new_last_easy_old_p\tiui\src\main\AndroidManifest.xml:5:22-64
+13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+13-->D:\new_last_easy_old_p\tiui\src\main\AndroidManifest.xml:6:5-79
+13-->D:\new_last_easy_old_p\tiui\src\main\AndroidManifest.xml:6:22-76
+14
+15</manifest>

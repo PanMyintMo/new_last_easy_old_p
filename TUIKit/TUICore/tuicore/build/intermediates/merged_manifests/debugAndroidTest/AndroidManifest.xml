@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tencent.qcloud.tuicore.test" >
+
+    <uses-sdk
+        android:minSdkVersion="24"
+        android:targetSdkVersion="34" />
+
+    <instrumentation
+        android:name="android.test.InstrumentationTestRunner"
+        android:functionalTest="false"
+        android:handleProfiling="false"
+        android:label="Tests for com.tencent.qcloud.tuicore.test"
+        android:targetPackage="com.tencent.qcloud.tuicore.test" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="false"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:debuggable="true"
+        android:extractNativeLibs="false"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true" >
+        <uses-library android:name="android.test.runner" />
+
+        <activity
+            android:name="com.tencent.qcloud.tuicore.permission.PermissionActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:theme="@style/CoreActivityTranslucent"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+        <activity
+            android:name="com.tencent.qcloud.tuicore.util.PermissionRequester$PermissionActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:multiprocess="true"
+            android:theme="@style/CoreActivityTranslucent"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+
+        <provider
+            android:name="com.tencent.qcloud.tuicore.ServiceInitializer"
+            android:authorities="com.tencent.qcloud.tuicore.test.TUICore.Init"
+            android:enabled="true"
+            android:exported="true"
+            android:initOrder="99999" />
+    </application>
+
+</manifest>

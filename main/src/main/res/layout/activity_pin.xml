@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/logo" />
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/createButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/create_pin_number"
+        android:textColor="#000"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/confirmPinTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:padding="@dimen/dp_15"
+        android:text="@string/confirmPinTextView"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/sixPinNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:text="@string/enter_six_digit_code">
+    </TextView>
+    <TextView
+        android:id="@+id/retypePin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:visibility="gone"
+        android:text="Retype your pin number">
+
+    </TextView>
+
+    <!-- PIN Boxes -->
+    <LinearLayout
+        android:id="@+id/pinContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginTop="@dimen/dp_30"
+        android:orientation="horizontal">
+
+        <!-- Use 6 boxes -->
+        <EditText
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="4dp"
+            android:background="#D3D3D3"
+            android:gravity="center"
+            android:hint="0"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLength="1"
+            android:maxLines="1"
+            android:singleLine="true" />
+
+        <EditText
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="4dp"
+            android:background="#D3D3D3"
+            android:gravity="center"
+            android:hint="0"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLength="1"
+            android:maxLines="1"
+            android:singleLine="true" />
+
+        <EditText
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="4dp"
+            android:background="#D3D3D3"
+            android:gravity="center"
+            android:hint="0"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLength="1"
+            android:maxLines="1"
+            android:singleLine="true" />
+
+        <EditText
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="4dp"
+            android:background="#D3D3D3"
+            android:gravity="center"
+            android:hint="0"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLength="1"
+            android:maxLines="1"
+            android:singleLine="true" />
+
+        <EditText
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="4dp"
+            android:background="#D3D3D3"
+            android:gravity="center"
+            android:hint="0"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLength="1"
+            android:maxLines="1"
+            android:singleLine="true" />
+
+        <EditText
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="4dp"
+            android:background="#D3D3D3"
+            android:gravity="center"
+            android:hint="0"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLength="1"
+            android:maxLines="1"
+            android:singleLine="true" />
+
+    </LinearLayout>
+
+    <!-- Submit Button -->
+
+    <Button
+        android:id="@+id/btnCreate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:layout_marginTop="@dimen/dp_30"
+        android:backgroundTint="@color/disabled_color"
+        android:text="Create"
+        android:enabled="false"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:visibility="gone">
+
+    </Button>
+
+    <ImageButton
+        android:id="@+id/forwardArrow"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="end"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="@dimen/dp_10"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_arrow_forward" />
+
+
+</LinearLayout>

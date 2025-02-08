@@ -1,0 +1,10 @@
+#Wed Feb 05 11:08:42 MMT 2025
+base.2=D\:\\new_last_easy_old_p\\TUIKit\\TIMCommon\\timcommon\\build\\intermediates\\dex\\debugAndroidTest\\mergeLibDexDebugAndroidTest\\classes_0.dex
+path.2=classes_0.dex
+base.1=D\:\\new_last_easy_old_p\\TUIKit\\TIMCommon\\timcommon\\build\\intermediates\\dex\\debugAndroidTest\\mergeProjectDexDebugAndroidTest\\classes.dex
+path.1=classes.dex
+base.0=D\:\\new_last_easy_old_p\\TUIKit\\TIMCommon\\timcommon\\build\\intermediates\\dex\\debugAndroidTest\\mergeExtDexDebugAndroidTest\\classes.dex
+renamed.2=classes3.dex
+renamed.1=classes2.dex
+renamed.0=classes.dex
+path.0=classes.dex

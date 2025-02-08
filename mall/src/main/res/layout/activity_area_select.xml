@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <include layout="@layout/view_title"/>
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_above="@id/tv_confirm"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="@dimen/dp_16"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+            <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewProvince"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewCity"
+                    android:layout_width="0dp"
+                    android:background="@android:color/white"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.2"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+            <View
+                    android:layout_width="@dimen/dp_1"
+                    android:layout_height="match_parent"
+                    android:background="#f5f5f5"
+                    />
+            <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewArea"
+                    android:layout_width="0dp"
+                    android:background="@android:color/white"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.2"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+        </LinearLayout>
+
+        <com.hjq.shape.view.ShapeTextView
+                android:id="@+id/tv_confirm"
+                android:text="@string/sure"
+                android:gravity="center"
+                android:textSize="@dimen/sp_14"
+                android:textColor="@android:color/white"
+                app:shape_radius="@dimen/dp_4"
+                app:shape_solidColor="@color/colorAccent"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/dp_16"
+                android:layout_marginHorizontal="@dimen/dp_16"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"/>
+    </RelativeLayout>
+</LinearLayout>

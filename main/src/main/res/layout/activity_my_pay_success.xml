@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             xmlns:tools="http://schemas.android.com/tools"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:orientation="vertical"
+             android:layout_height="match_parent">
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@drawable/bg_my_coin_1"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <FrameLayout
+                android:id="@+id/fl_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="19dp">
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp">
+
+                <TextView
+                        android:id="@+id/titleView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold"/>
+
+                <ImageView
+                        android:id="@+id/btn_back"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerVertical="true"
+                        android:onClick="backClick"
+                        android:padding="9dp"
+                        android:src="@mipmap/icon_back"
+                        android:tint="@color/white"
+                        tools:ignore="UseAppTint"/>
+
+            </RelativeLayout>
+        </FrameLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="12dp"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Payment successful"
+                        android:gravity="center"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"/>
+            <TextView
+                    android:id="@+id/tvMoney"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ks0.00"
+                    android:gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"
+                    android:textSize="35sp"/>
+
+        </LinearLayout>
+
+        <com.hjq.shape.layout.ShapeRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:shape_topLeftRadius="10dp"
+                app:shape_topRightRadius="10dp"
+                app:shape_solidColor="#F5F7FB"
+                >
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                <com.hjq.shape.layout.ShapeLinearLayout
+                        android:layout_marginHorizontal="16dp"
+                        android:layout_marginVertical="29dp"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        app:shape_radius="6dp"
+                        app:shape_solidColor="@android:color/white"
+                        android:layout_height="wrap_content">
+                    <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_marginHorizontal="16dp"
+                            android:layout_height="44dp">
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:textColor="#8B919C"
+                                android:textSize="14sp"
+                                android:gravity="center_vertical"
+                                android:text="Payment method"
+                                />
+                        <TextView
+                                android:id="@+id/tvBankCard"
+                                android:layout_width="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_height="match_parent"
+                                android:textColor="#303549"
+                                android:textSize="14sp"
+                                android:gravity="center_vertical"
+                                android:text="balance payment"
+                                />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_marginHorizontal="16dp"
+                            android:layout_height="44dp">
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:textColor="#8B919C"
+                                android:textSize="14sp"
+                                android:gravity="center_vertical"
+                                android:text="payment time"
+                                />
+                        <TextView
+                                android:id="@+id/tvBankNo"
+                                android:layout_width="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_height="match_parent"
+                                android:textColor="#303549"
+                                android:textSize="14sp"
+                                android:gravity="center_vertical"
+                                />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_marginHorizontal="16dp"
+                            android:layout_height="44dp">
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:textColor="#8B919C"
+                                android:textSize="14sp"
+                                android:gravity="center_vertical"
+                                android:text="Order number"
+                                />
+                        <TextView
+                                android:id="@+id/tvRealName"
+                                android:layout_width="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_height="match_parent"
+                                android:textColor="#303549"
+                                android:textSize="14sp"
+                                android:gravity="center_vertical"
+                                />
+                    </RelativeLayout>
+                    <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_marginHorizontal="16dp"
+                            android:layout_height="44dp">
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:textColor="#8B919C"
+                                android:textSize="14sp"
+                                android:gravity="center_vertical"
+                                android:text="Payee"
+                                />
+                        <TextView
+                                android:id="@+id/tvSkRealName"
+                                android:layout_width="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_height="match_parent"
+                                android:textColor="#303549"
+                                android:textSize="14sp"
+                                android:gravity="center_vertical"
+                                />
+                    </RelativeLayout>
+                </com.hjq.shape.layout.ShapeLinearLayout>
+                <com.hjq.shape.view.ShapeTextView
+                        android:id="@+id/tvLijCz"
+                        android:layout_width="match_parent"
+                        android:layout_height="44dp"
+                        app:shape_radius="4dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Return to home page"
+                        android:layout_alignParentBottom="true"
+                        android:gravity="center"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        app:shape_solidColor="#3A76FE"
+                        android:layout_marginHorizontal="16dp"/>
+
+            </LinearLayout>
+
+
+        </com.hjq.shape.layout.ShapeRelativeLayout>
+
+    </LinearLayout>
+</FrameLayout>

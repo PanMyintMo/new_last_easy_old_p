@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              tools:ignore="MissingDefaultResource">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="@dimen/dp_12"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:paddingTop="6dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+            <com.hjq.shape.view.ShapeTextView
+                    android:id="@+id/icon"
+                    app:shape="oval"
+                    app:shape_solidColor="@color/colorAccent"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    />
+
+            <com.hjq.shape.view.ShapeTextView
+                    android:id="@+id/line"
+                    android:layout_width="1dp"
+                    android:layout_gravity="center"
+                    android:layout_height="match_parent"
+                    android:background="#E2E4EA"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginStart="@dimen/dp_12"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+            <TextView
+                    android:id="@+id/tvRemark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="派件"
+                    android:layout_marginTop="2dp"
+                    android:textSize="@dimen/sp_16"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    />
+            <TextView
+                    android:id="@+id/tvAcceptTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2022-09-10 12:34:16"
+                    android:layout_marginTop="6dp"
+                    android:textSize="@dimen/sp_14"
+                    android:textColor="@color/black"
+                    />
+            <TextView
+                    android:id="@+id/tvAcceptAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="派件"
+                    android:layout_marginBottom="@dimen/dp_20"
+                    android:layout_marginTop="6dp"
+                    android:textSize="@dimen/sp_14"
+                    android:textColor="@color/black"
+                    />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

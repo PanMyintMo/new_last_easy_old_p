@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:ignore="MissingDefaultResource">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:background="@mipmap/view_new_head_bg" />
+
+    <LinearLayout
+        android:id="@+id/app_bar_child_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_scrollFlags="scroll|enterAlways|exitUntilCollapsed">
+
+        <FrameLayout
+            android:id="@+id/fl_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="19dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="42dp">
+
+            <View
+                android:id="@+id/btn"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp" />
+
+            <ImageView
+                android:id="@+id/btn_rank"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="7dp"
+                android:layout_toLeftOf="@id/btn"
+                android:onClick="mainClick"
+                android:src="@mipmap/ic_new_ph" />
+
+            <ImageView
+                android:id="@+id/btn_msg"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:layout_toLeftOf="@id/btn_rank"
+                android:onClick="mainClick"
+                android:padding="@dimen/dp_2"
+                android:src="@mipmap/ic_new_message" />
+
+            <ImageView
+                android:id="@+id/btn_select_language"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dp"
+                android:layout_toStartOf="@id/btn_msg"
+                android:src="@mipmap/language_icon" />
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="26dp"
+                android:layout_centerVertical="true"
+                android:layout_toStartOf="@id/btn_msg"
+                android:height="26dp"
+                android:background="@drawable/bg_main_home_search"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:paddingHorizontal="12dp"
+                android:singleLine="true"
+                android:text="@string/language"
+                android:textSize="13sp"
+                android:translationY="-2dp"
+                android:visibility="gone" />
+
+
+            <TextView
+                android:id="@+id/red_point"
+                android:layout_width="wrap_content"
+                android:layout_height="14dp"
+                android:layout_alignTop="@id/btn_msg"
+                android:layout_alignRight="@id/btn_msg"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/bg_red_point"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:minWidth="14dp"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:textColor="@color/white"
+                android:textSize="10dp"
+                android:visibility="invisible" />
+
+
+            <net.lucode.hackware.magicindicator.MagicIndicator
+                android:id="@+id/indicator"
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/btn_select_language" />
+
+            <View
+                android:id="@+id/cover"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:alpha="0"
+                android:background="@color/white" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <com.hjq.shape.view.ShapeTextView
+        android:id="@+id/btn_search"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_below="@id/app_bar_child_view"
+        android:layout_marginHorizontal="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_12"
+        android:drawableLeft="@mipmap/ic_new_search"
+        android:drawablePadding="6dp"
+        android:gravity="center_vertical"
+        android:hint="@string/search_content"
+        android:onClick="mainClick"
+        android:paddingHorizontal="@dimen/dp_12"
+        app:shape_radius="3dp"
+        app:shape_solidColor="@android:color/white" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/btn_search"
+        android:layout_marginTop="@dimen/dp_14"
+        android:overScrollMode="never" />
+</RelativeLayout>

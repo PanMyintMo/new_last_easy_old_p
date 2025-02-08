@@ -1,0 +1,297 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.tencent.qcloud.tuikit.tuichat.test" >
+4
+5    <uses-sdk
+5-->D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger3889321786275094106.xml:5:5-74
+6        android:minSdkVersion="24"
+6-->D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger3889321786275094106.xml:5:15-41
+7        android:targetSdkVersion="34" />
+7-->D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger3889321786275094106.xml:5:42-71
+8
+9    <instrumentation
+9-->D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger3889321786275094106.xml:11:5-15:88
+10        android:name="android.test.InstrumentationTestRunner"
+10-->D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger3889321786275094106.xml:11:22-75
+11        android:functionalTest="false"
+11-->D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger3889321786275094106.xml:14:22-52
+12        android:handleProfiling="false"
+12-->D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger3889321786275094106.xml:13:22-53
+13        android:label="Tests for com.tencent.qcloud.tuikit.tuichat.test"
+13-->D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger3889321786275094106.xml:15:22-86
+14        android:targetPackage="com.tencent.qcloud.tuikit.tuichat.test" />
+14-->D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger3889321786275094106.xml:12:22-84
+15
+16    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+16-->[__tested_artifact__::TUIKit:TUIChat:tuichat] D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-81
+16-->[__tested_artifact__::TUIKit:TUIChat:tuichat] D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:22-78
+17    <uses-permission android:name="android.permission.CAMERA" />
+17-->[__tested_artifact__::TUIKit:TUIChat:tuichat] D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:5-65
+17-->[__tested_artifact__::TUIKit:TUIChat:tuichat] D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:22-62
+18    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+18-->[__tested_artifact__::TUIKit:TUIChat:tuichat] D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:5-71
+18-->[__tested_artifact__::TUIKit:TUIChat:tuichat] D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:22-68
+19    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+19-->[__tested_artifact__::TUIKit:TUIChat:tuichat] D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:5-80
+19-->[__tested_artifact__::TUIKit:TUIChat:tuichat] D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:22-77
+20    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+20-->[:TUIKit:TIMCommon:timcommon] D:\new_last_easy_old_p\TUIKit\TIMCommon\timcommon\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-79
+20-->[:TUIKit:TIMCommon:timcommon] D:\new_last_easy_old_p\TUIKit\TIMCommon\timcommon\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:22-76
+21    <uses-permission android:name="android.permission.INTERNET" />
+21-->[com.tencent.imsdk:imsdk-plus:8.0.5895] D:\gradle-6.1.1-bin\gradle-6.1.1\caches\transforms-2\files-2.1\722a7c1d3fa00001b49c2720422473c4\jetified-imsdk-plus-8.0.5895\AndroidManifest.xml:9:5-67
+21-->[com.tencent.imsdk:imsdk-plus:8.0.5895] D:\gradle-6.1.1-bin\gradle-6.1.1\caches\transforms-2\files-2.1\722a7c1d3fa00001b49c2720422473c4\jetified-imsdk-plus-8.0.5895\AndroidManifest.xml:9:22-64
+22    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+22-->[com.tencent.imsdk:imsdk-plus:8.0.5895] D:\gradle-6.1.1-bin\gradle-6.1.1\caches\transforms-2\files-2.1\722a7c1d3fa00001b49c2720422473c4\jetified-imsdk-plus-8.0.5895\AndroidManifest.xml:11:5-76
+22-->[com.tencent.imsdk:imsdk-plus:8.0.5895] D:\gradle-6.1.1-bin\gradle-6.1.1\caches\transforms-2\files-2.1\722a7c1d3fa00001b49c2720422473c4\jetified-imsdk-plus-8.0.5895\AndroidManifest.xml:11:22-73
+23
+24    <application
+24-->D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger3889321786275094106.xml:7:5-9:19
+25        android:allowBackup="false"
+25-->[com.tencent.imsdk:imsdk-plus:8.0.5895] D:\gradle-6.1.1-bin\gradle-6.1.1\caches\transforms-2\files-2.1\722a7c1d3fa00001b49c2720422473c4\jetified-imsdk-plus-8.0.5895\AndroidManifest.xml:14:9-36
+26        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+26-->[androidx.core:core:1.6.0] D:\gradle-6.1.1-bin\gradle-6.1.1\caches\transforms-2\files-2.1\88ec6dae24f634067b702bf38a92b4da\core-1.6.0\AndroidManifest.xml:24:18-86
+27        android:debuggable="true"
+27-->D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger3889321786275094106.xml:7:18-43
+28        android:extractNativeLibs="false"
+29        android:supportsRtl="true"
+29-->[com.tencent.imsdk:imsdk-plus:8.0.5895] D:\gradle-6.1.1-bin\gradle-6.1.1\caches\transforms-2\files-2.1\722a7c1d3fa00001b49c2720422473c4\jetified-imsdk-plus-8.0.5895\AndroidManifest.xml:15:9-35
+30        android:usesCleartextTraffic="true" >
+30-->[com.tencent.imsdk:imsdk-plus:8.0.5895] D:\gradle-6.1.1-bin\gradle-6.1.1\caches\transforms-2\files-2.1\722a7c1d3fa00001b49c2720422473c4\jetified-imsdk-plus-8.0.5895\AndroidManifest.xml:16:9-44
+31        <uses-library android:name="android.test.runner" />
+31-->D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger3889321786275094106.xml:8:9-60
+31-->D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger3889321786275094106.xml:8:23-57
+32
+33        <activity
+33-->[__tested_artifact__::TUIKit:TUIChat:tuichat] D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:9-21:47
+34            android:name="com.tencent.qcloud.tuikit.tuichat.component.imagevideoscan.ImageVideoScanActivity"
+34-->[__tested_artifact__::TUIKit:TUIChat:tuichat] D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:13-109
+35            android:configChanges="screenSize|keyboardHidden|orientation"
+35-->[__tested_artifact__::TUIKit:TUIChat:tuichat] D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:13-74
+36            android:exported="true"
+36-->[__tested_artifact__::TUIKit:TUIChat:tuichat] D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:13-36
+37            android:launchMode="singleTask" /> <!-- **************** Classic UI Start **************** -->
+37-->[__tested_artifact__::TUIKit:TUIChat:tuichat] D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\build\intermediates\library_manifest\debug\AndroidManifest.xml:21:13-44
+38        <activity
+38-->[__tested_artifact__::TUIKit:TUIChat:tuichat] D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\build\intermediates\library_manifest\debug\AndroidManifest.xml:24:9-28:70
+39            android:name="com.tencent.qcloud.tuikit.tuichat.classicui.page.MessageReplyDetailActivity"
+39-->[__tested_artifact__::TUIKit:TUIChat:tuichat] D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\build\intermediates\library_manifest\debug\AndroidManifest.xml:25:13-103
+40            android:exported="true"
+40-->[__tested_artifact__::TUIKit:TUIChat:tuichat] D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\build\intermediates\library_manifest\debug\AndroidManifest.xml:26:13-36
+41            android:screenOrientation="portrait"
+41-->[__tested_artifact__::TUIKit:TUIChat:tuichat] D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\build\intermediates\library_manifest\debug\AndroidManifest.xml:27:13-49
+42            android:windowSoftInputMode="adjustResize|stateHidden" />
+42-->[__tested_artifact__::TUIKit:TUIChat:tuichat] D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\build\intermediates\library_manifest\debug\AndroidManifest.xml:28:13-67
+43        <activity
+43-->[__tested_artifact__::TUIKit:TUIChat:tuichat] D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\build\intermediates\library_manifest\debug\AndroidManifest.xml:29:9-32:52
+44            android:name="com.tencent.qcloud.tuikit.tuichat.classicui.page.TUIForwardChatActivity"
+44-->[__tested_artifact__::TUIKit:TUIChat:tuichat] D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\build\intermediates\library_manifest\debug\AndroidManifest.xml:30:13-99
+45            android:exported="true"
+45-->[__tested_artifact__::TUIKit:TUIChat:tuichat] D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\build\intermediates\library_manifest\debug\AndroidManifest.xml:31:13-36
+46            android:screenOrientation="portrait" />
+46-->[__tested_artifact__::TUIKit:TUIChat:tuichat] D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\build\intermediates\library_manifest\debug\AndroidManifest.xml:32:13-49
+47        <activity
+47-->[__tested_artifact__::TUIKit:TUIChat:tuichat] D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\build\intermediates\library_manifest\debug\AndroidManifest.xml:33:9-38:55
+48            android:name="com.tencent.qcloud.tuikit.tuichat.classicui.page.TUIC2CChatActivity"
+48-->[__tested_artifact__::TUIKit:TUIChat:tuichat] D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\build\intermediates\library_manifest\debug\AndroidManifest.xml:34:13-95
+49            android:exported="true"
+49-->[__tested_artifact__::TUIKit:TUIChat:tuichat] D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\build\intermediates\library_manifest\debug\AndroidManifest.xml:35:13-36
+50            android:launchMode="singleTask"
+50-->[__tested_artifact__::TUIKit:TUIChat:tuichat] D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\build\intermediates\library_manifest\debug\AndroidManifest.xml:36:13-44
+51            android:screenOrientation="portrait"
+51-->[__tested_artifact__::TUIKit:TUIChat:tuichat] D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\build\intermediates\library_manifest\debug\AndroidManifest.xml:37:13-49
+52            android:windowSoftInputMode="adjustPan" />
+52-->[__tested_artifact__::TUIKit:TUIChat:tuichat] D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\build\intermediates\library_manifest\debug\AndroidManifest.xml:38:13-52
+53        <activity
+53-->[__tested_artifact__::TUIKit:TUIChat:tuichat] D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\build\intermediates\library_manifest\debug\AndroidManifest.xml:39:9-44:71
+54            android:name="com.tencent.qcloud.tuikit.tuichat.classicui.page.TUIGroupChatActivity"
+54-->[__tested_artifact__::TUIKit:TUIChat:tuichat] D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\build\intermediates\library_manifest\debug\AndroidManifest.xml:40:13-97
+55            android:exported="true"
+55-->[__tested_artifact__::TUIKit:TUIChat:tuichat] D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\build\intermediates\library_manifest\debug\AndroidManifest.xml:41:13-36
+56            android:launchMode="singleTask"
+56-->[__tested_artifact__::TUIKit:TUIChat:tuichat] D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\build\intermediates\library_manifest\debug\AndroidManifest.xml:42:13-44
+57            android:screenOrientation="portrait"
+57-->[__tested_artifact__::TUIKit:TUIChat:tuichat] D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\build\intermediates\library_manifest\debug\AndroidManifest.xml:43:13-49
+58            android:windowSoftInputMode="adjustNothing|stateHidden" />
+58-->[__tested_artifact__::TUIKit:TUIChat:tuichat] D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\build\intermediates\library_manifest\debug\AndroidManifest.xml:44:13-68
+59        <activity
+59-->[__tested_artifact__::TUIKit:TUIChat:tuichat] D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\build\intermediates\library_manifest\debug\AndroidManifest.xml:45:9-48:52
+60            android:name="com.tencent.qcloud.tuikit.tuichat.classicui.page.MessageReceiptDetailActivity"
+60-->[__tested_artifact__::TUIKit:TUIChat:tuichat] D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\build\intermediates\library_manifest\debug\AndroidManifest.xml:46:13-105
+61            android:exported="true"
+61-->[__tested_artifact__::TUIKit:TUIChat:tuichat] D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\build\intermediates\library_manifest\debug\AndroidManifest.xml:47:13-36
+62            android:screenOrientation="portrait" />
+62-->[__tested_artifact__::TUIKit:TUIChat:tuichat] D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\build\intermediates\library_manifest\debug\AndroidManifest.xml:48:13-49
+63        <activity
+63-->[__tested_artifact__::TUIKit:TUIChat:tuichat] D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\build\intermediates\library_manifest\debug\AndroidManifest.xml:49:9-52:52
+64            android:name="com.tencent.qcloud.tuikit.tuichat.component.camera.CameraActivity"
+64-->[__tested_artifact__::TUIKit:TUIChat:tuichat] D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\build\intermediates\library_manifest\debug\AndroidManifest.xml:50:13-93
+65            android:exported="true"
+65-->[__tested_artifact__::TUIKit:TUIChat:tuichat] D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\build\intermediates\library_manifest\debug\AndroidManifest.xml:51:13-36
+66            android:screenOrientation="portrait" /> <!-- **************** Classic UI End **************** -->
+66-->[__tested_artifact__::TUIKit:TUIChat:tuichat] D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\build\intermediates\library_manifest\debug\AndroidManifest.xml:52:13-49
+67        <!-- **************** Minimalist UI Start **************** -->
+68        <activity
+68-->[__tested_artifact__::TUIKit:TUIChat:tuichat] D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\build\intermediates\library_manifest\debug\AndroidManifest.xml:58:9-63:71
+69            android:name="com.tencent.qcloud.tuikit.tuichat.minimalistui.widget.messagepopmenu.ChatPopActivity"
+69-->[__tested_artifact__::TUIKit:TUIChat:tuichat] D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\build\intermediates\library_manifest\debug\AndroidManifest.xml:59:13-112
+70            android:exported="true"
+70-->[__tested_artifact__::TUIKit:TUIChat:tuichat] D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\build\intermediates\library_manifest\debug\AndroidManifest.xml:60:13-36
+71            android:launchMode="singleTask"
+71-->[__tested_artifact__::TUIKit:TUIChat:tuichat] D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\build\intermediates\library_manifest\debug\AndroidManifest.xml:61:13-44
+72            android:theme="@style/ChatTransparentPopActivityStyle"
+72-->[__tested_artifact__::TUIKit:TUIChat:tuichat] D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\build\intermediates\library_manifest\debug\AndroidManifest.xml:62:13-67
+73            android:windowSoftInputMode="adjustNothing|stateHidden" />
+73-->[__tested_artifact__::TUIKit:TUIChat:tuichat] D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\build\intermediates\library_manifest\debug\AndroidManifest.xml:63:13-68
+74        <activity
+74-->[__tested_artifact__::TUIKit:TUIChat:tuichat] D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\build\intermediates\library_manifest\debug\AndroidManifest.xml:64:9-69:71
+75            android:name="com.tencent.qcloud.tuikit.tuichat.minimalistui.page.TUIC2CChatMinimalistActivity"
+75-->[__tested_artifact__::TUIKit:TUIChat:tuichat] D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\build\intermediates\library_manifest\debug\AndroidManifest.xml:65:13-108
+76            android:exported="true"
+76-->[__tested_artifact__::TUIKit:TUIChat:tuichat] D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\build\intermediates\library_manifest\debug\AndroidManifest.xml:66:13-36
+77            android:launchMode="singleTask"
+77-->[__tested_artifact__::TUIKit:TUIChat:tuichat] D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\build\intermediates\library_manifest\debug\AndroidManifest.xml:67:13-44
+78            android:screenOrientation="portrait"
+78-->[__tested_artifact__::TUIKit:TUIChat:tuichat] D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\build\intermediates\library_manifest\debug\AndroidManifest.xml:68:13-49
+79            android:windowSoftInputMode="adjustNothing|stateHidden" />
+79-->[__tested_artifact__::TUIKit:TUIChat:tuichat] D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\build\intermediates\library_manifest\debug\AndroidManifest.xml:69:13-68
+80        <activity
+80-->[__tested_artifact__::TUIKit:TUIChat:tuichat] D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\build\intermediates\library_manifest\debug\AndroidManifest.xml:70:9-75:71
+81            android:name="com.tencent.qcloud.tuikit.tuichat.minimalistui.page.TUIGroupChatMinimalistActivity"
+81-->[__tested_artifact__::TUIKit:TUIChat:tuichat] D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\build\intermediates\library_manifest\debug\AndroidManifest.xml:71:13-110
+82            android:exported="true"
+82-->[__tested_artifact__::TUIKit:TUIChat:tuichat] D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\build\intermediates\library_manifest\debug\AndroidManifest.xml:72:13-36
+83            android:launchMode="singleTask"
+83-->[__tested_artifact__::TUIKit:TUIChat:tuichat] D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\build\intermediates\library_manifest\debug\AndroidManifest.xml:73:13-44
+84            android:screenOrientation="portrait"
+84-->[__tested_artifact__::TUIKit:TUIChat:tuichat] D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\build\intermediates\library_manifest\debug\AndroidManifest.xml:74:13-49
+85            android:windowSoftInputMode="adjustNothing|stateHidden" />
+85-->[__tested_artifact__::TUIKit:TUIChat:tuichat] D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\build\intermediates\library_manifest\debug\AndroidManifest.xml:75:13-68
+86        <activity
+86-->[__tested_artifact__::TUIKit:TUIChat:tuichat] D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\build\intermediates\library_manifest\debug\AndroidManifest.xml:76:9-79:52
+87            android:name="com.tencent.qcloud.tuikit.tuichat.minimalistui.page.MessageDetailMinimalistActivity"
+87-->[__tested_artifact__::TUIKit:TUIChat:tuichat] D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\build\intermediates\library_manifest\debug\AndroidManifest.xml:77:13-111
+88            android:exported="true"
+88-->[__tested_artifact__::TUIKit:TUIChat:tuichat] D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\build\intermediates\library_manifest\debug\AndroidManifest.xml:78:13-36
+89            android:screenOrientation="portrait" />
+89-->[__tested_artifact__::TUIKit:TUIChat:tuichat] D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\build\intermediates\library_manifest\debug\AndroidManifest.xml:79:13-49
+90        <activity
+90-->[__tested_artifact__::TUIKit:TUIChat:tuichat] D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\build\intermediates\library_manifest\debug\AndroidManifest.xml:80:9-83:52
+91            android:name="com.tencent.qcloud.tuikit.tuichat.minimalistui.page.TUIForwardChatMinimalistActivity"
+91-->[__tested_artifact__::TUIKit:TUIChat:tuichat] D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\build\intermediates\library_manifest\debug\AndroidManifest.xml:81:13-112
+92            android:exported="true"
+92-->[__tested_artifact__::TUIKit:TUIChat:tuichat] D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\build\intermediates\library_manifest\debug\AndroidManifest.xml:82:13-36
+93            android:screenOrientation="portrait" />
+93-->[__tested_artifact__::TUIKit:TUIChat:tuichat] D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\build\intermediates\library_manifest\debug\AndroidManifest.xml:83:13-49
+94        <activity
+94-->[:TUIKit:TIMCommon:timcommon] D:\new_last_easy_old_p\TUIKit\TIMCommon\timcommon\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:9-17:52
+95            android:name="com.tencent.qcloud.tuikit.timcommon.component.activities.SelectionActivity"
+95-->[:TUIKit:TIMCommon:timcommon] D:\new_last_easy_old_p\TUIKit\TIMCommon\timcommon\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:13-102
+96            android:exported="true"
+96-->[:TUIKit:TIMCommon:timcommon] D:\new_last_easy_old_p\TUIKit\TIMCommon\timcommon\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:13-36
+97            android:screenOrientation="portrait" />
+97-->[:TUIKit:TIMCommon:timcommon] D:\new_last_easy_old_p\TUIKit\TIMCommon\timcommon\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:13-49
+98        <activity
+98-->[:TUIKit:TIMCommon:timcommon] D:\new_last_easy_old_p\TUIKit\TIMCommon\timcommon\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:9-21:52
+99            android:name="com.tencent.qcloud.tuikit.timcommon.component.activities.ImageSelectActivity"
+99-->[:TUIKit:TIMCommon:timcommon] D:\new_last_easy_old_p\TUIKit\TIMCommon\timcommon\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:13-104
+100            android:exported="true"
+100-->[:TUIKit:TIMCommon:timcommon] D:\new_last_easy_old_p\TUIKit\TIMCommon\timcommon\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:13-36
+101            android:screenOrientation="portrait" />
+101-->[:TUIKit:TIMCommon:timcommon] D:\new_last_easy_old_p\TUIKit\TIMCommon\timcommon\build\intermediates\library_manifest\debug\AndroidManifest.xml:21:13-49
+102        <activity
+102-->[:TUIKit:TIMCommon:timcommon] D:\new_last_easy_old_p\TUIKit\TIMCommon\timcommon\build\intermediates\library_manifest\debug\AndroidManifest.xml:22:9-25:52
+103            android:name="com.tencent.qcloud.tuikit.timcommon.component.activities.SelectionMinimalistActivity"
+103-->[:TUIKit:TIMCommon:timcommon] D:\new_last_easy_old_p\TUIKit\TIMCommon\timcommon\build\intermediates\library_manifest\debug\AndroidManifest.xml:23:13-112
+104            android:exported="true"
+104-->[:TUIKit:TIMCommon:timcommon] D:\new_last_easy_old_p\TUIKit\TIMCommon\timcommon\build\intermediates\library_manifest\debug\AndroidManifest.xml:24:13-36
+105            android:screenOrientation="portrait" />
+105-->[:TUIKit:TIMCommon:timcommon] D:\new_last_easy_old_p\TUIKit\TIMCommon\timcommon\build\intermediates\library_manifest\debug\AndroidManifest.xml:25:13-49
+106        <activity
+106-->[:TUIKit:TIMCommon:timcommon] D:\new_last_easy_old_p\TUIKit\TIMCommon\timcommon\build\intermediates\library_manifest\debug\AndroidManifest.xml:26:9-29:52
+107            android:name="com.tencent.qcloud.tuikit.timcommon.component.activities.ImageSelectMinimalistActivity"
+107-->[:TUIKit:TIMCommon:timcommon] D:\new_last_easy_old_p\TUIKit\TIMCommon\timcommon\build\intermediates\library_manifest\debug\AndroidManifest.xml:27:13-114
+108            android:exported="true"
+108-->[:TUIKit:TIMCommon:timcommon] D:\new_last_easy_old_p\TUIKit\TIMCommon\timcommon\build\intermediates\library_manifest\debug\AndroidManifest.xml:28:13-36
+109            android:screenOrientation="portrait" />
+109-->[:TUIKit:TIMCommon:timcommon] D:\new_last_easy_old_p\TUIKit\TIMCommon\timcommon\build\intermediates\library_manifest\debug\AndroidManifest.xml:29:13-49
+110        <activity
+110-->[:TUIKit:TIMCommon:timcommon] D:\new_last_easy_old_p\TUIKit\TIMCommon\timcommon\build\intermediates\library_manifest\debug\AndroidManifest.xml:30:9-37:75
+111            android:name="com.tencent.qcloud.tuikit.timcommon.util.ActivityResultResolver$ActivityResultProxyActivity"
+111-->[:TUIKit:TIMCommon:timcommon] D:\new_last_easy_old_p\TUIKit\TIMCommon\timcommon\build\intermediates\library_manifest\debug\AndroidManifest.xml:31:13-119
+112            android:configChanges="orientation|keyboardHidden|screenSize"
+112-->[:TUIKit:TIMCommon:timcommon] D:\new_last_easy_old_p\TUIKit\TIMCommon\timcommon\build\intermediates\library_manifest\debug\AndroidManifest.xml:32:13-74
+113            android:exported="true"
+113-->[:TUIKit:TIMCommon:timcommon] D:\new_last_easy_old_p\TUIKit\TIMCommon\timcommon\build\intermediates\library_manifest\debug\AndroidManifest.xml:33:13-36
+114            android:launchMode="singleTask"
+114-->[:TUIKit:TIMCommon:timcommon] D:\new_last_easy_old_p\TUIKit\TIMCommon\timcommon\build\intermediates\library_manifest\debug\AndroidManifest.xml:34:13-44
+115            android:multiprocess="true"
+115-->[:TUIKit:TIMCommon:timcommon] D:\new_last_easy_old_p\TUIKit\TIMCommon\timcommon\build\intermediates\library_manifest\debug\AndroidManifest.xml:35:13-40
+116            android:theme="@style/CoreActivityTranslucent"
+116-->[:TUIKit:TIMCommon:timcommon] D:\new_last_easy_old_p\TUIKit\TIMCommon\timcommon\build\intermediates\library_manifest\debug\AndroidManifest.xml:36:13-59
+117            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+117-->[:TUIKit:TIMCommon:timcommon] D:\new_last_easy_old_p\TUIKit\TIMCommon\timcommon\build\intermediates\library_manifest\debug\AndroidManifest.xml:37:13-72
+118
+119        <provider
+119-->[:TUIKit:TIMCommon:timcommon] D:\new_last_easy_old_p\TUIKit\TIMCommon\timcommon\build\intermediates\library_manifest\debug\AndroidManifest.xml:39:9-47:20
+120            android:name="com.tencent.qcloud.tuikit.timcommon.util.FileProvider"
+120-->[:TUIKit:TIMCommon:timcommon] D:\new_last_easy_old_p\TUIKit\TIMCommon\timcommon\build\intermediates\library_manifest\debug\AndroidManifest.xml:40:13-81
+121            android:authorities="com.tencent.qcloud.tuikit.tuichat.test.timcommon.fileprovider"
+121-->[:TUIKit:TIMCommon:timcommon] D:\new_last_easy_old_p\TUIKit\TIMCommon\timcommon\build\intermediates\library_manifest\debug\AndroidManifest.xml:41:13-74
+122            android:exported="false"
+122-->[:TUIKit:TIMCommon:timcommon] D:\new_last_easy_old_p\TUIKit\TIMCommon\timcommon\build\intermediates\library_manifest\debug\AndroidManifest.xml:42:13-37
+123            android:grantUriPermissions="true" >
+123-->[:TUIKit:TIMCommon:timcommon] D:\new_last_easy_old_p\TUIKit\TIMCommon\timcommon\build\intermediates\library_manifest\debug\AndroidManifest.xml:43:13-47
+124            <meta-data
+124-->[:TUIKit:TIMCommon:timcommon] D:\new_last_easy_old_p\TUIKit\TIMCommon\timcommon\build\intermediates\library_manifest\debug\AndroidManifest.xml:44:13-46:61
+125                android:name="android.support.FILE_PROVIDER_PATHS"
+125-->[:TUIKit:TIMCommon:timcommon] D:\new_last_easy_old_p\TUIKit\TIMCommon\timcommon\build\intermediates\library_manifest\debug\AndroidManifest.xml:45:17-67
+126                android:resource="@xml/file_paths_public" />
+126-->[:TUIKit:TIMCommon:timcommon] D:\new_last_easy_old_p\TUIKit\TIMCommon\timcommon\build\intermediates\library_manifest\debug\AndroidManifest.xml:46:17-58
+127        </provider>
+128
+129        <activity
+129-->[:TUIKit:TUICore:tuicore] D:\new_last_easy_old_p\TUIKit\TUICore\tuicore\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:9-18:75
+130            android:name="com.tencent.qcloud.tuicore.permission.PermissionActivity"
+130-->[:TUIKit:TUICore:tuicore] D:\new_last_easy_old_p\TUIKit\TUICore\tuicore\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:13-84
+131            android:configChanges="orientation|keyboardHidden|screenSize"
+131-->[:TUIKit:TUICore:tuicore] D:\new_last_easy_old_p\TUIKit\TUICore\tuicore\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:13-74
+132            android:exported="true"
+132-->[:TUIKit:TUICore:tuicore] D:\new_last_easy_old_p\TUIKit\TUICore\tuicore\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:13-36
+133            android:launchMode="singleTask"
+133-->[:TUIKit:TUICore:tuicore] D:\new_last_easy_old_p\TUIKit\TUICore\tuicore\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:13-44
+134            android:theme="@style/CoreActivityTranslucent"
+134-->[:TUIKit:TUICore:tuicore] D:\new_last_easy_old_p\TUIKit\TUICore\tuicore\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:13-59
+135            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+135-->[:TUIKit:TUICore:tuicore] D:\new_last_easy_old_p\TUIKit\TUICore\tuicore\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:13-72
+136        <activity
+136-->[:TUIKit:TUICore:tuicore] D:\new_last_easy_old_p\TUIKit\TUICore\tuicore\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:9-26:75
+137            android:name="com.tencent.qcloud.tuicore.util.PermissionRequester$PermissionActivity"
+137-->[:TUIKit:TUICore:tuicore] D:\new_last_easy_old_p\TUIKit\TUICore\tuicore\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:13-98
+138            android:configChanges="orientation|keyboardHidden|screenSize"
+138-->[:TUIKit:TUICore:tuicore] D:\new_last_easy_old_p\TUIKit\TUICore\tuicore\build\intermediates\library_manifest\debug\AndroidManifest.xml:21:13-74
+139            android:exported="true"
+139-->[:TUIKit:TUICore:tuicore] D:\new_last_easy_old_p\TUIKit\TUICore\tuicore\build\intermediates\library_manifest\debug\AndroidManifest.xml:22:13-36
+140            android:launchMode="singleTask"
+140-->[:TUIKit:TUICore:tuicore] D:\new_last_easy_old_p\TUIKit\TUICore\tuicore\build\intermediates\library_manifest\debug\AndroidManifest.xml:23:13-44
+141            android:multiprocess="true"
+141-->[:TUIKit:TUICore:tuicore] D:\new_last_easy_old_p\TUIKit\TUICore\tuicore\build\intermediates\library_manifest\debug\AndroidManifest.xml:24:13-40
+142            android:theme="@style/CoreActivityTranslucent"
+142-->[:TUIKit:TUICore:tuicore] D:\new_last_easy_old_p\TUIKit\TUICore\tuicore\build\intermediates\library_manifest\debug\AndroidManifest.xml:25:13-59
+143            android:windowSoftInputMode="stateHidden|stateAlwaysHidden" />
+143-->[:TUIKit:TUICore:tuicore] D:\new_last_easy_old_p\TUIKit\TUICore\tuicore\build\intermediates\library_manifest\debug\AndroidManifest.xml:26:13-72
+144
+145        <provider
+145-->[:TUIKit:TUICore:tuicore] D:\new_last_easy_old_p\TUIKit\TUICore\tuicore\build\intermediates\library_manifest\debug\AndroidManifest.xml:28:9-33:41
+146            android:name="com.tencent.qcloud.tuicore.ServiceInitializer"
+146-->[:TUIKit:TUICore:tuicore] D:\new_last_easy_old_p\TUIKit\TUICore\tuicore\build\intermediates\library_manifest\debug\AndroidManifest.xml:29:13-73
+147            android:authorities="com.tencent.qcloud.tuikit.tuichat.test.TUICore.Init"
+147-->[:TUIKit:TUICore:tuicore] D:\new_last_easy_old_p\TUIKit\TUICore\tuicore\build\intermediates\library_manifest\debug\AndroidManifest.xml:30:13-64
+148            android:enabled="true"
+148-->[:TUIKit:TUICore:tuicore] D:\new_last_easy_old_p\TUIKit\TUICore\tuicore\build\intermediates\library_manifest\debug\AndroidManifest.xml:31:13-35
+149            android:exported="true"
+149-->[:TUIKit:TUICore:tuicore] D:\new_last_easy_old_p\TUIKit\TUICore\tuicore\build\intermediates\library_manifest\debug\AndroidManifest.xml:32:13-36
+150            android:initOrder="99999" />
+150-->[:TUIKit:TUICore:tuicore] D:\new_last_easy_old_p\TUIKit\TUICore\tuicore\build\intermediates\library_manifest\debug\AndroidManifest.xml:33:13-38
+151    </application>
+152
+153</manifest>

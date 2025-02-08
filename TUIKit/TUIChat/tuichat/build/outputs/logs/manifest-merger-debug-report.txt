@@ -1,0 +1,175 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml:2:1-93:12
+INJECTED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml:2:1-93:12
+INJECTED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml:2:1-93:12
+INJECTED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml:2:1-93:12
+INJECTED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml:2:1-93:12
+INJECTED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml:2:1-93:12
+INJECTED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml:2:1-93:12
+	package
+		ADDED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml:3:5-48
+		INJECTED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml
+		INJECTED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml
+		ADDED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml:2:1-93:12
+		INJECTED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml
+		ADDED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml:2:1-93:12
+		INJECTED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml:5:5-81
+	android:name
+		ADDED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml:5:22-78
+uses-permission#android.permission.CAMERA
+ADDED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml:7:5-65
+	android:name
+		ADDED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml:7:22-62
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml:8:5-71
+	android:name
+		ADDED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml:8:22-68
+uses-permission#android.permission.MODIFY_AUDIO_SETTINGS
+ADDED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml:9:5-80
+	android:name
+		ADDED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml:9:22-77
+application
+ADDED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml:11:5-91:19
+activity#com.tencent.qcloud.tuikit.tuichat.component.imagevideoscan.ImageVideoScanActivity
+ADDED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml:12:9-16:47
+	android:launchMode
+		ADDED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml:16:13-44
+	android:exported
+		ADDED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml:14:13-36
+	android:configChanges
+		ADDED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml:15:13-74
+	android:name
+		ADDED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml:13:13-109
+activity#com.tencent.qcloud.tuikit.tuichat.classicui.page.MessageReplyDetailActivity
+ADDED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml:20:9-24:70
+	android:screenOrientation
+		ADDED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml:23:13-49
+	android:windowSoftInputMode
+		ADDED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml:24:13-67
+	android:exported
+		ADDED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml:22:13-36
+	android:name
+		ADDED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml:21:13-103
+activity#com.tencent.qcloud.tuikit.tuichat.classicui.page.TUIForwardChatActivity
+ADDED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml:25:9-28:52
+	android:screenOrientation
+		ADDED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml:28:13-49
+	android:exported
+		ADDED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml:27:13-36
+	android:name
+		ADDED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml:26:13-99
+activity#com.tencent.qcloud.tuikit.tuichat.classicui.page.TUIC2CChatActivity
+ADDED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml:29:9-34:55
+	android:screenOrientation
+		ADDED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml:33:13-49
+	android:launchMode
+		ADDED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml:32:13-44
+	android:windowSoftInputMode
+		ADDED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml:34:13-52
+	android:exported
+		ADDED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml:31:13-36
+	android:name
+		ADDED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml:30:13-95
+activity#com.tencent.qcloud.tuikit.tuichat.classicui.page.TUIGroupChatActivity
+ADDED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml:37:9-42:71
+	android:screenOrientation
+		ADDED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml:41:13-49
+	android:launchMode
+		ADDED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml:40:13-44
+	android:windowSoftInputMode
+		ADDED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml:42:13-68
+	android:exported
+		ADDED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml:39:13-36
+	android:name
+		ADDED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml:38:13-97
+activity#com.tencent.qcloud.tuikit.tuichat.classicui.page.MessageReceiptDetailActivity
+ADDED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml:44:9-47:52
+	android:screenOrientation
+		ADDED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml:47:13-49
+	android:exported
+		ADDED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml:46:13-36
+	android:name
+		ADDED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml:45:13-105
+activity#com.tencent.qcloud.tuikit.tuichat.component.camera.CameraActivity
+ADDED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml:48:9-51:52
+	android:screenOrientation
+		ADDED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml:51:13-49
+	android:exported
+		ADDED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml:50:13-36
+	android:name
+		ADDED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml:49:13-93
+activity#com.tencent.qcloud.tuikit.tuichat.minimalistui.widget.messagepopmenu.ChatPopActivity
+ADDED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml:57:9-62:71
+	android:launchMode
+		ADDED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml:59:13-44
+	android:windowSoftInputMode
+		ADDED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml:62:13-68
+	android:exported
+		ADDED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml:61:13-36
+	android:theme
+		ADDED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml:60:13-67
+	android:name
+		ADDED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml:58:13-112
+activity#com.tencent.qcloud.tuikit.tuichat.minimalistui.page.TUIC2CChatMinimalistActivity
+ADDED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml:64:9-69:71
+	android:screenOrientation
+		ADDED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml:68:13-49
+	android:launchMode
+		ADDED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml:67:13-44
+	android:windowSoftInputMode
+		ADDED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml:69:13-68
+	android:exported
+		ADDED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml:66:13-36
+	android:name
+		ADDED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml:65:13-108
+activity#com.tencent.qcloud.tuikit.tuichat.minimalistui.page.TUIGroupChatMinimalistActivity
+ADDED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml:71:9-76:71
+	android:screenOrientation
+		ADDED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml:75:13-49
+	android:launchMode
+		ADDED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml:74:13-44
+	android:windowSoftInputMode
+		ADDED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml:76:13-68
+	android:exported
+		ADDED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml:73:13-36
+	android:name
+		ADDED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml:72:13-110
+activity#com.tencent.qcloud.tuikit.tuichat.minimalistui.page.MessageDetailMinimalistActivity
+ADDED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml:78:9-81:52
+	android:screenOrientation
+		ADDED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml:81:13-49
+	android:exported
+		ADDED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml:80:13-36
+	android:name
+		ADDED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml:79:13-111
+activity#com.tencent.qcloud.tuikit.tuichat.minimalistui.page.TUIForwardChatMinimalistActivity
+ADDED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml:83:9-86:52
+	android:screenOrientation
+		ADDED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml:86:13-49
+	android:exported
+		ADDED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml:85:13-36
+	android:name
+		ADDED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml:84:13-112
+uses-sdk
+INJECTED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml
+INJECTED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml
+INJECTED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml
+INJECTED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml
+		ADDED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml
+		INJECTED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml
+		ADDED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml
+		INJECTED from D:\new_last_easy_old_p\TUIKit\TUIChat\tuichat\src\main\AndroidManifest.xml

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="game_zjh">تشي يونغ سان تشانغ</string>
+    <string name="game_zp">محظوظ القرص الدوار</string>
+    <string name="game_choose_game">اختيار اللعبة</string>
+    <string name="game_wait_start">على وشك أن تبدأ ، يرجى الانتظار . . .</string>
+    <string name="game_charge">شحن</string>
+    <string name="game_win">وين يا</string>
+    <string name="game_wait_end">يرجى الانتظار حتى نهاية اللعبة</string>
+    <string name="game_wan">مليون</string>
+    <string name="game_zjh_role_name_1">بيج جو اكس 2</string>
+    <string name="game_zjh_role_name_2">المنك الزيز</string>
+    <string name="game_zjh_role_name_3">جو X2</string>
+    <string name="game_start_support">بدء الدعم</string>
+    <string name="game_show_result">تعلن النتائج</string>
+    <string name="game_hd_role_name_1">روبرتس X2</string>
+    <string name="game_hd_role_name_0">التعادل X2</string>
+    <string name="game_hd_role_name_2">كيد اكس 2</string>
+    <string name="game_nz_name_1">ستار اكس 2</string>
+    <string name="game_nz_name_2">الكرة X2</string>
+    <string name="game_nz_name_3">زي اكس 2</string>
+    <string name="game_nz_name_1_2">نجوم .</string>
+    <string name="game_nz_name_2_2">الكرة</string>
+    <string name="game_nz_name_3_2">زيزي</string>
+    <string name="game_nz_sz_sf_record">الفوز أو الخسارة على الرسم البياني</string>
+    <string name="game_water">تدفق المياه</string>
+    <string name="game_nz_apply_sz">تطبيق أعلى وأسفل القرية</string>
+    <string name="game_nz_apply_sz_1">طلب</string>
+    <string name="game_nz_apply_sz_2">أقل لقومية تشوانغ</string>
+    <string name="game_nz_gx">تهانينا</string>
+    <string name="game_nz_sz">شانغ تشوانغ</string>
+    <string name="game_nz_ben">بن هوم</string>
+    <string name="game_nz_zhuang">صانع</string>
+    <string name="game_nz_sz_xz">الرصيد غير كاف</string>
+    <string name="game_nz_sheng">فوز</string>
+    <string name="game_nz_fu">سالب</string>
+    <string name="game_nz_sz_ls">صناع المياه</string>
+    <string name="game_nz_sz_ls_jh">مكتب رقم</string>
+    <string name="game_nz_sz_ls_px">نوع البطاقة</string>
+    <string name="game_nz_sz_ls_js">تسوية</string>
+    <string name="game_nz_sz_list">قائمة</string>
+    <string name="game_nz_sz_order">متتابعة</string>
+    <string name="game_nz_sz_player">لاعب .</string>
+    <string name="game_nz_sz_coin">لعبة عملة</string>
+    <string name="game_nz_zhuang_1">ترانج</string>
+    <string name="game_nz_apply_sz_yajin">إيداع</string>
+    <string name="game_nz_apply_sz_yajin_empty">يرجى ملء إيداع</string>
+    <string name="game_nz_apply_sz_yajin_zd">الحد الأدنى</string>
+    <string name="game_lose_tip">النصر والهزيمة هي القاعدة العسكرية</string>
+
+</resources>

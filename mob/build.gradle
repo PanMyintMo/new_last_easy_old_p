@@ -1,0 +1,135 @@
+apply plugin: 'com.android.library'
+
+apply plugin: 'com.mob.sdk'
+
+MobSDK {
+    appKey "替换为mob官方申请的appkey"
+    appSecret "替换为mob官方申请的appkey对应的appSecret"
+    ShareSDK {
+        loopShare true
+        devInfo {
+            /*SinaWeibo {
+                appKey "568898243"
+                appSecret "38a4f8204cc784f81f9f0daaf31e02e3"
+                callbackUri "https://www.sharesdk.cn"
+            }*/
+            Wechat {
+                appId "wx4868b35061f87885"
+                appSecret "64020361b8ec4c99936c0e3999a9f249"
+                userName "gh_afb25ac019c9"
+                path "pages/index/index.html?id=1"
+                withShareTicket true
+                miniprogramType 2
+            }
+            QQ {
+                appId "100371282"
+                appKey "aed9b0303e3ed1e27bae87c33761161d"
+            }
+            Facebook {
+                appKey "1412473428822331"
+                appSecret "a42f4f3f867dc947b9ed6020c2e93558"
+                callbackUri "https://www.baidu.com"
+            }
+            Twitter {
+                appKey "WjmQNOqQB5YwPTs3AcZXVXYn3"
+                appSecret "CWEkJUeq1sTMt4OzKMo08iRe1OlK468NAVh0XBxNtFgvvjbRl4"
+                callbackUri "https://www.mob.com"
+                IsUseV2 true
+                shareByAppClient true
+                bypassApproval true
+                enable true
+            }
+            ShortMessage {
+                enable true
+            }
+            LinkedIn {
+                appKey "ejo5ibkye3vo"
+                appSecret "cC7B2jpxITqPLZ5M"
+                callbackUri "https://www.sharesdk.cn"
+            }
+            Douyin {
+                appKey "aw9ivykfjvi4hpwo"
+                appSecret "42b4caa6bda60bd49f05f06d0a4956e1"
+            }
+            FacebookMessenger {
+                appId "107704292745179"
+            }
+            WhatsApp {
+                enable true
+            }
+            GooglePlus {
+                appId "236300675100-am5pm8km7md1memjevq8rl9pg5c4s4b8.apps.googleusercontent.com"
+                callbackUri "https://localhost"
+                officialVersion "default"
+                shareByAppClient true
+                enable true
+            }
+            Line {
+                appId "1477692153"
+                appSecret "f30c036370f2e04ade71c52eef73a9af"
+            }
+            WechatMoments {
+                appId "wx4868b35061f87885"
+                appSecret "64020361b8ec4c99936c0e3999a9f249"
+            }
+            WechatFavorite {
+                appId "wx4868b35061f87885"
+                appSecret "64020361b8ec4c99936c0e3999a9f249"
+            }
+            QZone {
+                appId "100371282"
+                appKey "aed9b0303e3ed1e27bae87c33761161d"
+            }
+        }
+    }
+}
+
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+        manifestPlaceholders = rootProject.ext.manifestPlaceholders
+        ndk {
+            abiFilters "arm64-v8a" //"armeabi-v7a","arm64-v8a"
+        }
+    }
+    aaptOptions {
+        cruncherEnabled = false
+        useNewCruncher = false
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+repositories {
+    flatDir {
+        dirs 'libs','../libs'
+    }
+}
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile rootProject.ext.dependencies["appcompat-v7"]
+//    compile files('libs/MobCommons-2020.0928.1220.jar')
+//    compile files('libs/MobTools-2020.0917.1108.jar')
+//    compile files('libs/ShareSDK-Core-3.8.2.jar')
+//    compile files('libs/ShareSDK-Facebook-3.8.2.jar')
+//    compile files('libs/ShareSDK-FacebookMessenger-3.8.2.jar')
+//    compile files('libs/ShareSDK-Line-3.8.2.jar')
+//    compile files('libs/ShareSDK-QQ-3.8.2.jar')
+//    compile files('libs/ShareSDK-QZone-3.8.2.jar')
+//    compile files('libs/ShareSDK-Twitter-3.8.2.jar')
+//    compile files('libs/ShareSDK-Wechat-3.8.2.jar')
+//    compile files('libs/ShareSDK-Wechat-Core-3.8.2.jar')
+//    compile files('libs/ShareSDK-Wechat-Favorite-3.8.2.jar')
+//    compile files('libs/ShareSDK-Wechat-Moments-3.8.2.jar')
+//    compile files('libs/open_sdk_r6019_lite.jar')
+}

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/text_1"
+        style="@style/body_333_bold_18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/select_language"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/line_1"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginHorizontal="18dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/line_1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_1" />
+
+    <TextView
+        android:id="@+id/zh_text"
+        style="@style/body_333_bold_16sp"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="@string/simple_chinese"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/line_1" />
+
+    <TextView
+        android:id="@+id/en_text"
+        style="@style/body_333_bold_16sp"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="@string/english"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/zh_text" />
+
+    <TextView
+        android:id="@+id/arabic_text"
+        style="@style/body_333_bold_16sp"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="@string/arabic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/en_text" />
+
+    <TextView
+        android:id="@+id/burmese_text"
+        style="@style/body_333_bold_16sp"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="@string/burmese"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/arabic_text" />
+
+    <TextView
+        android:id="@+id/thai_text"
+        style="@style/body_333_bold_16sp"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="@string/thai"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/burmese_text" />
+</androidx.constraintlayout.widget.ConstraintLayout>

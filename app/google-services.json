@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "604315513301",
+    "project_id": "ezliveapp",
+    "storage_bucket": "ezliveapp.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:604315513301:android:625eedf17ad06de740cd5c",
+        "android_client_info": {
+          "package_name": "com.gawilive.phonelivex"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "604315513301-fvqp3c6bgmbfhv2s4n8km92evctlm186.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gawilive.phonelivex",
+            "certificate_hash": "7b479acda662b1678c08a0549f8255f3239645cf"
+          }
+        },
+        {
+          "client_id": "604315513301-g7hoq005a6rus6ce4hrmqt1d2pjbgai6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJOhDGj16D1rWuh4xuQ0US7agvetHi0a8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "604315513301-g7hoq005a6rus6ce4hrmqt1d2pjbgai6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

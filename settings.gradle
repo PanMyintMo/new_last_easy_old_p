@@ -1,0 +1,17 @@
+include ':app'
+include ':baidu'
+include ':common'
+include ':im'
+include ':live'
+include ':main'
+include ':video'
+include ':game'
+include ':mall'
+include ':beauty'
+// 拓幻美颜
+include ':tiui'
+include ':TUIKit:TUICore:tuicore'
+// 引入 IM 组件公共模块（必要模块）
+include ':TUIKit:TIMCommon:timcommon'
+// 引入聊天功能模块 (基础功能模块)
+include ':TUIKit:TUIChat:tuichat'

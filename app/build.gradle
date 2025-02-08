@@ -1,0 +1,182 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.mob.sdk'
+apply plugin: 'com.google.gms.google-services'
+
+
+
+apply from : '../version.gradle'
+
+MobSDK {
+    appKey "38919dbcc620c"
+    appSecret "10d04607915c029b977f4c50e40a085f"
+    ShareSDK {
+        loopShare true
+        devInfo {
+            SinaWeibo {
+                appKey "568898243"
+                appSecret "38a4f8204cc784f81f9f0daaf31e02e3"
+                callbackUri "https://www.sharesdk.cn"
+            }
+//            Wechat {
+//                appId "wx4868b35061f87885"
+//                appSecret "64020361b8ec4c99936c0e3999a9f249"
+//                userName "gh_afb25ac019c9"
+//                path "pages/index/index.html?id=1"
+//                withShareTicket true
+//                miniprogramType 2
+//            }
+//            QQ {
+//                appId "100371282"
+//                appKey "aed9b0303e3ed1e27bae87c33761161d"
+//            }
+            Facebook {
+                appKey "1412473428822331"
+                appSecret "a42f4f3f867dc947b9ed6020c2e93558"
+                callbackUri "https://www.baidu.com/"
+            }
+            Twitter {
+                appKey "WjmQNOqQB5YwPTs3AcZXVXYn3"
+                appSecret "CWEkJUeq1sTMt4OzKMo08iRe1OlK468NAVh0XBxNtFgvvjbRl4"
+                callbackUri "https://www.mob.com"
+                IsUseV2 true
+                shareByAppClient true
+                bypassApproval true
+                enable true
+            }
+            ShortMessage {
+                enable true
+            }
+            LinkedIn {
+                appKey "ejo5ibkye3vo"
+                appSecret "cC7B2jpxITqPLZ5M"
+                callbackUri "https://www.sharesdk.cn"
+            }
+//            Douyin {
+//                appKey "aw9ivykfjvi4hpwo"
+//                appSecret "42b4caa6bda60bd49f05f06d0a4956e1"
+//            }
+            FacebookMessenger {
+                appId "107704292745179"
+            }
+            WhatsApp {
+                enable true
+            }
+            GooglePlus {
+                appId "928162956671-6d4u7khhqiobt9fb1a60j1u68851phd0.apps.googleusercontent.com"
+                callbackUri "https://localhost"
+                officialVersion "default"
+                shareByAppClient true
+                enable true
+            }
+//            Line {
+//                appId "1477692153"
+//                appSecret "f30c036370f2e04ade71c52eef73a9af"
+//            }
+//            WechatMoments {
+//                appId "wx4868b35061f87885"
+//                appSecret "64020361b8ec4c99936c0e3999a9f249"
+//            }
+//            WechatFavorite {
+//                appId "wx4868b35061f87885"
+//                appSecret "64020361b8ec4c99936c0e3999a9f249"
+//            }
+//            QZone {
+//                appId "100371282"
+//                appKey "aed9b0303e3ed1e27bae87c33761161d"
+//            }
+        }
+    }
+}
+
+
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    buildToolsVersion rootProject.ext.android.buildToolsVersion
+    signingConfigs {
+        release {
+            keyAlias 'ninepurplephoenix'
+            keyPassword 'dx5948555'
+            storeFile file('ninepurplephoenix.keystore')
+            storePassword 'dx5948555'
+        }
+    }
+
+
+    aaptOptions {
+        cruncherEnabled = false
+        useNewCruncher = false
+    }
+    defaultConfig {
+
+        applicationId "com.gawilive.phonelivex"
+        manifestPlaceholders = rootProject.ext.manifestPlaceholders
+        multiDexEnabled true
+        ndk {
+            abiFilters "arm64-v8a" //"armeabi-v7a", "arm64-v8a", "x86_64"
+        }
+        signingConfig signingConfigs.release
+
+
+
+        // Reference properties from gradle.properties
+        buildConfigField "String", "LIVE_LICENCE_URL", "\"${project.properties['LIVE_LICENCE_URL']}\""
+        buildConfigField "String", "LIVE_KEY", "\"${project.properties['LIVE_KEY']}\""
+        buildConfigField "String", "UGC_LICENCE_URL", "\"${project.properties['UGC_LICENCE_URL']}\""
+        buildConfigField "String", "UGC_KEY", "\"${project.properties['UGC_KEY']}\""
+        buildConfigField "String", "BEAUTY_APP_ID", "\"${project.properties['BEAUTY_APP_ID']}\""
+        buildConfigField "String", "BEAUTY_KEY", "\"${project.properties['BEAUTY_KEY']}\""
+        buildConfigField "String", "MOB_SDK_APP_ID", "\"${project.properties['MOB_SDK_APP_ID']}\""
+        buildConfigField "String", "MOB_SDK_APP_KEY", "\"${project.properties['MOB_SDK_APP_KEY']}\""
+
+    }
+    buildTypes {
+        release {
+
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+
+        }
+        debug {
+            signingConfig signingConfigs.release
+        }
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+
+    android.applicationVariants.all { variant ->
+        def appName = "demo"
+        def createTime = new Date().format("yyMMddHHmm", TimeZone.getTimeZone("GMT+08:00"))
+        def fileName = appName + "_v" + defaultConfig.versionName + "_" + createTime
+        variant.outputs.each { output ->
+            def curFileName = output.outputFileName.toString()
+            def replacement = curFileName.substring(0,curFileName.indexOf("."))
+            output.outputFileName =curFileName.replace(replacement,fileName)
+        }
+    }
+    packagingOptions {
+        pickFirst 'lib/armeabi-v7a/libtencentloc.so'
+        pickFirst 'lib/arm64-v8a/libtencentloc.so'
+    }
+}
+
+repositories {
+    flatDir {
+        dirs 'libs', '../libs'
+    }
+}
+
+dependencies {
+    implementation 'com.hbb20:ccp:2.6.0'
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    //直播
+    compile project(':main')
+    //短视频
+    compile project(':video')
+    implementation(platform("com.google.firebase:firebase-bom:30.0.0"))
+    implementation("com.google.firebase:firebase-analytics")
+    implementation("com.google.firebase:firebase-messaging")
+
+}

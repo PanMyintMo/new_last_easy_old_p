@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@android:color/white"
+              android:orientation="vertical">
+
+    <FrameLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingTop="19dp"
+            android:id="@+id/fl_top"
+            >
+
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                >
+
+            <TextView
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:id="@+id/titleView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:textColor="@color/textColor"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    />
+
+            <ImageView
+                    android:id="@+id/btn_back"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:onClick="backClick"
+                    android:padding="9dp"
+                    android:src="@mipmap/icon_back"
+                    android:tint="@color/textColor"
+                    />
+
+            <TextView
+                    android:id="@+id/tvRightTitle"
+                    android:text="@string/new_71"
+                    android:layout_width="wrap_content"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/textColor"
+                    android:layout_marginEnd="@dimen/dp_14"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    />
+
+        </RelativeLayout>
+    </FrameLayout>
+
+    <include layout="@layout/view_common_recycleview"/>
+</LinearLayout>

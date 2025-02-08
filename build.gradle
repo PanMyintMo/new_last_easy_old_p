@@ -1,0 +1,71 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+apply from: "config.gradle"
+apply from: "dependencies.gradle"
+buildscript {
+    repositories {
+        // 1.添加MobSDK Maven地址
+        maven {
+            url "https://mvn.mob.com/android"
+        }
+
+        //edit by pp
+        maven {
+            url "https://maven.aliyun.com/repository/public"
+        }
+        maven {
+            url "https://maven.aliyun.com/repository/google"
+        }
+        maven {
+            url "https://www.jitpack.io"
+        }
+        maven { url 'https://developer.huawei.com/repo/' }
+        //edit by pan
+        maven { url 'https://jitpack.io' }
+
+        google()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:4.0.2'
+        // 2.注册MobSDK
+        // 增加MobSDK插件配置
+        classpath "com.mob.sdk:MobSDK2:+"
+        // MobSDK 增加google services插件配置，用于集成FCM，不集成FCM可不配置
+        classpath 'com.google.gms:google-services:4.3.14'
+
+        classpath 'com.huawei.agconnect:agcp:1.6.0.300'
+
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.31"
+    }
+}
+
+allprojects {
+    repositories {
+        // 1.添加MobSDK Maven地址
+        maven {
+            url "https://mvn.mob.com/android"
+        }
+
+        maven {
+            url "https://maven.aliyun.com/repository/public"
+        }
+        maven {
+            url "https://maven.aliyun.com/repository/google"
+        }
+        maven {
+            url "https://www.jitpack.io"
+        }
+        maven { url 'https://developer.huawei.com/repo/' }
+        //edit by pan
+        maven { url 'https://jitpack.io' }
+        google()
+        flatDir {
+            dirs 'libs' // 指定.aar文件的位置
+        }
+        maven { url 'https://mvnrepository.com/artifact/com.google.firebase/firebase-encoders-json' }
+
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

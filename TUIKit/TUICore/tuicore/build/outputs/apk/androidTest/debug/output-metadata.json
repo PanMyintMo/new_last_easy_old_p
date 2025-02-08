@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "com.tencent.qcloud.tuicore.test",
+  "variantName": "debugAndroidTest",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "properties": [],
+      "versionCode": 220,
+      "versionName": "20.2.0",
+      "enabled": true,
+      "outputFile": "tuicore-debug-androidTest.apk"
+    }
+  ]
+}

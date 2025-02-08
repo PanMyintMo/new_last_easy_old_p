@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="337dp">
+
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@mipmap/ic_cj_gz_dialog_bg"
+                />
+
+        <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lottery Rule"
+                android:layout_marginTop="8dp"
+                android:textSize="@dimen/sp_18"
+                android:textColor="@android:color/white"
+                android:layout_centerHorizontal="true"
+                />
+
+        <androidx.core.widget.NestedScrollView
+                android:layout_marginVertical="@dimen/dp_30"
+                android:layout_below="@id/tvTitle"
+                android:layout_marginHorizontal="@dimen/dp_16"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+
+                <TextView
+                        android:id="@+id/tvTitleOne"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Event Time"
+                        android:textColor="#ff000000"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        />
+
+                <TextView
+                        android:id="@+id/tvTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#ff333333"
+                        android:textSize="14sp"
+                        android:layout_marginTop="5dp"
+                        />
+
+                <TextView
+                        android:id="@+id/tvTitleTwo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Event Summary"
+                        android:textColor="#ff000000"
+                        android:textSize="14sp"
+                        android:layout_marginTop="9.5dp"
+                        android:textStyle="bold"
+                        />
+
+                <TextView
+                        android:id="@+id/tvContent"
+                        android:layout_marginTop="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#ff333333"
+                        android:textSize="14sp"
+                        />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </RelativeLayout>
+
+    <ImageView
+            android:id="@+id/btn_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="21dp"
+            android:src="@mipmap/ic_popup_close_white"
+            />
+</LinearLayout>

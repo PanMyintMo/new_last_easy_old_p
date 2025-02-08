@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\new_last_easy_old_p\\tiui\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-small-v4\\values-small-v4.xml",
+            "map": [
+                {
+                    "source": "D:\\gradle-6.1.1-bin\\gradle-6.1.1\\caches\\transforms-2\\files-2.1\\d9787cd6c0bf7b00c10d0dac79678bbf\\material-1.2.1\\res\\values-small-v4\\values-small-v4.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,128,198,270",
+                        "endColumns": "72,69,71,69",
+                        "endOffsets": "123,193,265,335"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical">
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@drawable/bg_my_coin_1"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <FrameLayout
+                android:id="@+id/fl_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="19dp">
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp">
+
+                <TextView
+                        android:id="@+id/titleView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold"/>
+
+                <ImageView
+                        android:id="@+id/btn_back"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerVertical="true"
+                        android:onClick="backClick"
+                        android:padding="9dp"
+                        android:src="@mipmap/icon_back"
+                        android:tint="@color/white"
+                        tools:ignore="UseAppTint"/>
+
+            </RelativeLayout>
+        </FrameLayout>
+
+        <com.hjq.shape.layout.ShapeLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="12dp"
+                android:orientation="vertical"
+                app:shape_solidColor="@android:color/white"
+                app:shape_topLeftRadius="6dp"
+                app:shape_topRightRadius="6dp">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_16"
+                    android:layout_marginTop="21dp"
+                    android:text="@string/string_ckr"
+                    android:textColor="#ff8b919c"
+                    android:textSize="14sp"/>
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginHorizontal="16dp">
+
+                <TextView
+                        android:id="@+id/tvSelectPeople"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="14sp"
+                        android:visibility="gone"
+                        android:text="请选择收款人"
+                        android:gravity="center_vertical"
+                        />
+
+                <LinearLayout
+                        android:id="@+id/llSelectUser"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        >
+
+                    <com.makeramen.roundedimageview.RoundedImageView
+                            android:id="@+id/user_head"
+                            android:layout_width="40dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="40dp"
+                            android:scaleType="centerCrop"
+                            app:riv_oval="true"/>
+
+                    <LinearLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginStart="12dp"
+                            >
+
+                        <TextView
+                                android:id="@+id/tvNickName"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="xxx"
+                                android:textColor="#ff484848"
+                                android:textSize="15sp"
+                                />
+
+                        <TextView
+                                android:id="@+id/tvPhone"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="xxx"
+                                android:layout_marginTop="@dimen/dp_4"
+                                android:textColor="#ff8b919c"
+                                android:textSize="12sp"
+                                />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+        </com.hjq.shape.layout.ShapeLinearLayout>
+
+        <com.hjq.shape.layout.ShapeRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:shape_solidColor="#F5F7FB"
+                app:shape_topLeftRadius="10dp"
+                app:shape_topRightRadius="10dp">
+
+            <com.hjq.shape.layout.ShapeLinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginTop="@dimen/dp_12"
+                    android:layout_marginBottom="29dp"
+                    android:orientation="vertical"
+                    app:shape_radius="6dp"
+                    app:shape_solidColor="@android:color/white">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="18dp"
+                        android:text="@string/string_zzje"
+                        android:textColor="#8B919C"/>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="16dp"
+                        android:layout_marginTop="18dp"
+                        android:orientation="horizontal">
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Ks"
+                            android:textColor="#24293C"
+                            android:textSize="22sp"
+                            android:textStyle="bold"/>
+
+                    <EditText
+                            android:id="@+id/edMoney"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:background="@color/transparent"
+                            android:hint="@string/string_input_zz_money"
+                            android:inputType="numberDecimal"
+                            android:textColorHint="#4D666666"
+                            android:textSize="35sp"
+                            android:textStyle="bold"/>
+                </LinearLayout>
+
+                <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:layout_marginTop="11dp"
+                        android:background="#E6EAF2"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:visibility="gone"
+                        android:layout_marginTop="18dp"
+                        android:text="请选择付款方式"
+                        android:textColor="#8B919C"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="240dp"
+                        android:visibility="gone"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                        android:overScrollMode="never"/>
+            </com.hjq.shape.layout.ShapeLinearLayout>
+
+            <com.hjq.shape.view.ShapeTextView
+                    android:id="@+id/tvLijCz"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginBottom="30dp"
+                    android:gravity="center"
+                    android:text="@string/string_llzz"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    app:shape_radius="4dp"
+                    app:shape_solidColor="#3A76FE"/>
+        </com.hjq.shape.layout.ShapeRelativeLayout>
+
+    </LinearLayout>
+</FrameLayout>

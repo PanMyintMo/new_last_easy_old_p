@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "artifactType": {
+    "type": "APK",
+    "kind": "Directory"
+  },
+  "applicationId": "cn.tillusory.tiui.test",
+  "variantName": "debugAndroidTest",
+  "elements": [
+    {
+      "type": "SINGLE",
+      "filters": [],
+      "properties": [],
+      "versionCode": 220,
+      "versionName": "20.2.0",
+      "enabled": true,
+      "outputFile": "tiui-debug-androidTest.apk"
+    }
+  ]
+}

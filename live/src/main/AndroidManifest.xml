@@ -1,0 +1,96 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gawilive.live">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <application
+        android:allowBackup="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.gawilive.live.activity.LiveAnchorActivity"
+            android:configChanges="screenLayout|orientation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name="com.gawilive.live.activity.LiveAudienceActivity"
+            android:configChanges="screenLayout|orientation|screenSize|keyboard|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize|stateAlwaysHidden" />
+        <activity
+            android:name="com.gawilive.live.activity.LiveChooseClassActivity"
+            android:screenOrientation="portrait"
+            android:exported="false"/>
+        <activity
+            android:name="com.gawilive.live.activity.LiveReportActivity"
+            android:screenOrientation="portrait"
+            android:exported="false"/>
+        <activity
+            android:name="com.gawilive.live.activity.LiveAddImpressActivity"
+            android:screenOrientation="portrait"
+            android:exported="false"/>
+        <activity
+            android:name="com.gawilive.live.activity.LiveContributeActivity"
+            android:screenOrientation="portrait"
+            android:exported="false"/>
+        <activity
+            android:name="com.gawilive.live.activity.LiveGuardListActivity"
+            android:screenOrientation="portrait"
+            android:exported="false"/>
+        <activity
+            android:name="com.gawilive.live.activity.LiveRecordActivity"
+            android:screenOrientation="portrait"
+            android:exported="false"/>
+        <activity
+            android:name="com.gawilive.live.activity.LiveRecordPlayActivity"
+            android:screenOrientation="portrait"
+            android:exported="false"/>
+        <activity
+            android:name="com.gawilive.live.activity.RoomManageActivity"
+            android:screenOrientation="portrait"
+            android:exported="false"/>
+        <activity
+            android:name="com.gawilive.live.activity.RoomManageDetailActivity"
+            android:screenOrientation="portrait"
+            android:exported="false"/>
+        <activity
+            android:name="com.gawilive.live.activity.LiveAdminListActivity"
+            android:screenOrientation="portrait"
+            android:exported="false"/>
+        <activity
+            android:name="com.gawilive.live.activity.LiveShutUpActivity"
+            android:screenOrientation="portrait"
+            android:exported="false"/>
+        <activity
+            android:name="com.gawilive.live.activity.LiveBlackActivity"
+            android:screenOrientation="portrait"
+            android:exported="false"/>
+        <activity
+            android:name="com.gawilive.live.activity.LiveGoodsAddActivity"
+            android:screenOrientation="portrait"
+            android:exported="false"/>
+        <activity
+            android:name="com.gawilive.live.floatwindow.FloatPermissionActivity"
+            android:screenOrientation="portrait"
+            android:exported="false"/>
+        <activity
+            android:name="com.gawilive.live.activity.LuckPanRecordActivity"
+            android:screenOrientation="portrait"
+            android:exported="false"/>
+        <activity
+            android:name="com.gawilive.live.activity.UserHomeBgActivity"
+            android:screenOrientation="portrait"
+            android:exported="false"/>
+
+
+
+        <!--Android 9.0移除了apache的HttpClient，而金山sdk中用到了这个，不加这个的话在Android 9.0会崩溃-->
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+    </application>
+
+</manifest>

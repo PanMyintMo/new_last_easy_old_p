@@ -1,0 +1,265 @@
+apply plugin: 'com.android.library'
+
+apply plugin: 'com.mob.sdk'
+
+apply plugin: 'com.huawei.agconnect'
+
+apply from: '../version.gradle'
+
+
+MobSDK {
+    appKey "38919dbcc620c"
+    appSecret "10d04607915c029b977f4c50e40a085f"
+    ShareSDK {
+        loopShare true
+        devInfo {
+//            SinaWeibo {
+//                appKey "568898243"
+//                appSecret "38a4f8204cc784f81f9f0daaf31e02e3"
+//                callbackUri "https://www.sharesdk.cn"
+//            }
+//            Wechat {
+//                appId "wx4868b35061f87885"
+//                appSecret "64020361b8ec4c99936c0e3999a9f249"
+//                userName "gh_afb25ac019c9"
+//                path "pages/index/index.html?id=1"
+//                withShareTicket true
+//                miniprogramType 2
+//            }
+//            QQ {
+//                appId "100371282"
+//                appKey "aed9b0303e3ed1e27bae87c33761161d"
+//            }
+            Facebook {
+                appKey "1412473428822331"
+                appSecret "a42f4f3f867dc947b9ed6020c2e93558"
+                callbackUri "https://www.baidu.com/"
+            }
+            Twitter {
+                appKey "WjmQNOqQB5YwPTs3AcZXVXYn3"
+                appSecret "CWEkJUeq1sTMt4OzKMo08iRe1OlK468NAVh0XBxNtFgvvjbRl4"
+                callbackUri "https://www.mob.com"
+                IsUseV2 true
+                shareByAppClient true
+                bypassApproval true
+                enable true
+            }
+            ShortMessage {
+                enable true
+            }
+            LinkedIn {
+                appKey "ejo5ibkye3vo"
+                appSecret "cC7B2jpxITqPLZ5M"
+                callbackUri "https://www.sharesdk.cn"
+            }
+//            Douyin {
+//                appKey "aw9ivykfjvi4hpwo"
+//                appSecret "42b4caa6bda60bd49f05f06d0a4956e1"
+//            }
+            FacebookMessenger {
+                appId "107704292745179"
+            }
+            WhatsApp {
+                enable true
+            }
+            GooglePlus {
+                appId "928162956671-6d4u7khhqiobt9fb1a60j1u68851phd0.apps.googleusercontent.com"
+                callbackUri "https://localhost"
+                officialVersion "default"
+                shareByAppClient true
+                enable true
+            }
+//            Line {
+//                appId "1477692153"
+//                appSecret "f30c036370f2e04ade71c52eef73a9af"
+//            }
+//            WechatMoments {
+//                appId "wx4868b35061f87885"
+//                appSecret "64020361b8ec4c99936c0e3999a9f249"
+//            }
+//            WechatFavorite {
+//                appId "wx4868b35061f87885"
+//                appSecret "64020361b8ec4c99936c0e3999a9f249"
+//            }
+//            QZone {
+//                appId "100371282"
+//                appKey "aed9b0303e3ed1e27bae87c33761161d"
+//            }
+        }
+    }
+}
+
+
+android {
+
+
+    defaultConfig {
+
+        manifestPlaceholders = rootProject.ext.manifestPlaceholders
+        ndk {
+            abiFilters "arm64-v8a" //"armeabi-v7a", "arm64-v8a", "x86_64"
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    // 支持 Java JDK 8
+
+}
+repositories {
+    flatDir {
+        dirs 'libs', '../libs'
+    }
+}
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile rootProject.ext.dependencies["appcompat-v7"]
+    compile rootProject.ext.dependencies["recyclerview-v7"]
+    compile rootProject.ext.dependencies["cardview-v7"]
+    compile rootProject.ext.dependencies["design"]
+    compile rootProject.ext.dependencies["multidex"]
+    compile rootProject.ext.dependencies["swiperefreshlayout"]
+    compile files('../libs/commons-io-1.4.jar')
+
+    //constraint 布局
+    compile rootProject.ext.dependencies["constraint"]
+    //    //okHttp网络请求
+    compile rootProject.ext.dependencies["okhttp"]
+
+    //fastJson解析json
+    compile rootProject.ext.dependencies["fastjson"]
+
+    //eventbus事件总线
+    compile rootProject.ext.dependencies["eventbus"]
+
+    //使用Glide加载图片
+    compile rootProject.ext.dependencies["glide"]
+
+    //一个基于Glide的transformation库,拥有裁剪,着色,模糊,滤镜等多种转换效果
+    compile rootProject.ext.dependencies["glide-transformations"]
+
+    //带圆角，边框的的ImageView
+    compile rootProject.ext.dependencies["roundedimageview"]
+
+    //gif库，播放礼物gif用
+    compile rootProject.ext.dependencies["gif-drawable"]
+
+    //svga播放器
+    compile rootProject.ext.dependencies["SVGAPlayer"]
+
+    //七牛云存储
+     compile rootProject.ext.dependencies["qiniu-sdk"]
+
+
+    //微信sdk,支付登录分享
+   // compile rootProject.ext.dependencies["tencent-wechat-sdk"]
+
+//    //友盟统计
+//    compile rootProject.ext.dependencies["umeng-common"]
+//    compile rootProject.ext.dependencies["umeng-asms"]
+
+    //图片裁剪
+    compile rootProject.ext.dependencies["ucrop"]
+
+    //支付宝sdk
+    compile files('libs/alipaySdk-20180601.jar')
+
+    //腾讯定位，地图sdk
+//    compile files('libs/TencentLocationSdk_v6.2.5.3.jar')
+//    compile files('libs/TencentMapSDK_1.2.8.1.jar')
+    compile ('com.tencent.map.geolocation:TencentLocationSdk-openplatform:7.5.5.5')
+    compile files('libs/tencent-mapsdk-5.7.0.f5203237.jar')
+    //下拉刷新上拉加载
+    compile rootProject.ext.dependencies["smartRefreshLayout"]
+
+    //ViewPager指示器
+    compile rootProject.ext.dependencies["magicIndicator"]
+
+    //shareSDK
+//    compile project(':mob')
+
+    //Tencent live broadcast sdk
+    api 'com.tencent.liteav:LiteAVSDK_Professional:12.2.0.15072'
+    // okgo
+    api 'com.lzy.net:okgo:3.0.4'
+    api 'com.lzy.net:okserver:2.0.5'
+
+    //轮播图
+    compile rootProject.ext.dependencies["banner"]
+
+    //鲁班
+//    compile rootProject.ext.dependencies["Luban"]
+
+    //一个Picker控件，选择日期，城市用
+    compile files('libs/AndroidPicker-1.5.6.jar')
+
+    //    compile 'com.squareup.leakcanary:leakcanary-android:1.6.3'
+    compile 'com.google.android:flexbox:1.0.0'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+
+    //亚马逊存储
+    compile 'com.amazonaws:aws-android-sdk-s3:2.16.13'
+    compile('com.amazonaws:aws-android-sdk-mobile-client:2.16.13') { transitive = true }
+
+//    implementation ('com.braintreepayments.api:drop-in:3.7.1') {
+//        exclude group: 'com.braintreepayments.api', module: 'data-collector'
+//    }
+
+
+    //codeInstall
+    compile files('libs/CodeInstallSdk_1.6.5_pro.jar')
+
+    //滚轮选择器
+    compile 'com.github.zyyoona7:wheelview:1.0.7'
+    compile 'com.github.zyyoona7:pickerview:1.0.9'
+
+    api 'com.github.getActivity:ShapeView:6.0'
+
+
+
+    // 支付密码
+    api 'com.github.lzjin:AlipayPassDialog:2.2'
+
+
+    api 'com.github.getActivity:GsonFactory:5.2'
+
+    api 'com.tencent:mmkv-static:1.2.10'
+
+    api 'com.huawei.hms:scan:2.12.0.301'
+
+    implementation 'com.google.zxing:core:3.3.3'
+
+    api 'com.github.li-xiaojun:XPopup:2.5.10'
+
+    api 'com.hjq:toast:8.8'
+
+    api 'com.github.getActivity:XXPermissions:20.0'
+
+
+    api 'io.github.lucksiege:pictureselector:v3.11.2'
+    // 图片压缩 (按需引入)
+    api 'io.github.lucksiege:compress:v3.11.2'
+    // 图片裁剪 (按需引入)
+    //  api 'io.github.lucksiege:ucrop:v3.10.4'
+    //自定义相机
+    api 'io.github.lucksiege:camerax:v3.11.2'
+
+    // 腾讯im
+//    api 'com.tencent.imsdk:imsdk-plus:8.0.5895'
+    api 'com.tencent.imsdk:imsdk-plus:8.3.6498'
+
+    api project(":TUIKit:TUICore:tuicore")
+
+    api project(":TUIKit:TIMCommon:timcommon")
+
+    api project(":TUIKit:TUIChat:tuichat")
+
+    // 美颜
+    api project(":tiui")
+
+}

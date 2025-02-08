@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:background="@android:color/white"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <include layout="@layout/view_title" />
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/refreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+                android:id="@+id/llNotData"
+                android:layout_width="match_parent"
+                android:layout_marginTop="60dp"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/icon_data_empty"
+                    />
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/sp_14"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/dp_16"
+                    android:textColor="@color/black"
+                    android:text="@string/no_data"
+                    />
+        </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hjq.shape.layout.ShapeFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:shape_angle="-90"
+    app:shape_endColor="#5CB9FE"
+    app:shape_startColor="#0F8BFB">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/fl_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="19dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="46dp">
+
+                <TextView
+                    android:id="@+id/titleView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/btn_back"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:onClick="backClick"
+                    android:padding="9dp"
+                    android:src="@mipmap/icon_back"
+                    android:tint="@color/white"
+                    tools:ignore="UseAppTint" />
+
+            </RelativeLayout>
+        </FrameLayout>
+
+       <androidx.core.widget.NestedScrollView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent">
+           <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:orientation="vertical"
+                   >
+               <com.hjq.shape.layout.ShapeLinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginHorizontal="16dp"
+                       android:layout_marginTop="20dp"
+                       android:orientation="vertical"
+                       app:shape_radius="6dp"
+                       app:shape_solidColor="#F8F8F8">
+
+                   <com.hjq.shape.layout.ShapeRelativeLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="76dp"
+                           android:layout_centerHorizontal="true"
+                           android:layout_marginHorizontal="16dp"
+                           android:paddingHorizontal="16dp">
+
+                       <com.makeramen.roundedimageview.RoundedImageView
+                               android:id="@+id/user_head"
+                               android:layout_width="40dp"
+                               android:layout_centerVertical="true"
+                               android:layout_height="40dp"
+                               android:scaleType="centerCrop"
+                               app:riv_oval="true" />
+
+                       <TextView
+                               android:id="@+id/tvNickName"
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_centerVertical="true"
+                               android:layout_marginStart="12dp"
+                               android:layout_toRightOf="@id/user_head"
+                               android:text="User"
+                               android:textColor="@color/textColor"
+                               android:textSize="14sp"
+                               android:textStyle="bold" />
+
+                       <TextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:layout_alignParentRight="true"
+                               android:layout_centerVertical="true"
+                               android:text="@string/string_xsjfk"
+                               android:textColor="#5E6066"
+                               android:textSize="12sp" />
+                   </com.hjq.shape.layout.ShapeRelativeLayout>
+
+                   <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:background="@android:color/white"
+                           android:orientation="vertical">
+
+                       <ImageView
+                               android:id="@+id/imgTxm"
+                               android:layout_width="match_parent"
+                               android:layout_height="100dp"
+                               android:layout_marginHorizontal="26dp"
+                               android:layout_marginTop="16dp" />
+
+                       <ImageView
+                               android:id="@+id/imgQrCode"
+                               android:layout_width="220dp"
+                               android:layout_height="220dp"
+                               android:layout_gravity="center"
+                               android:layout_marginHorizontal="26dp"
+                               android:layout_marginTop="20dp" />
+
+                       <View
+                               android:layout_width="match_parent"
+                               android:layout_height="10dp"
+                               android:layout_marginTop="26dp"
+                               android:background="#EEEEEE" />
+
+                       <RelativeLayout
+                               android:layout_width="match_parent"
+                               android:layout_height="74dp">
+
+                           <ImageView
+                                   android:id="@+id/imgMyQb"
+                                   android:layout_width="wrap_content"
+                                   android:layout_height="wrap_content"
+                                   android:layout_centerVertical="true"
+                                   android:layout_marginStart="19dp"
+                                   android:src="@mipmap/dollar_icon_iii" />
+
+                           <LinearLayout
+                                   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content"
+                                   android:layout_marginStart="11dp"
+                                   android:layout_centerVertical="true"
+                                   android:layout_toRightOf="@id/imgMyQb"
+                                   android:orientation="vertical">
+
+                               <TextView
+                                       android:id="@+id/tvMoney"
+                                       android:layout_width="wrap_content"
+                                       android:layout_height="wrap_content"
+                                       android:text=""
+                                       android:textColor="#ff323232"
+                                       android:textSize="14sp"
+                                       android:textStyle="bold" />
+                               <TextView
+                                       android:layout_width="match_parent"
+                                       android:layout_height="wrap_content"
+                                       android:layout_marginTop="@dimen/dp_2"
+                                       android:text="@string/string_yxsyfkfs_tips"
+                                       android:textColor="#ff9a9a9a"
+                                       android:textSize="11sp"
+                                       />
+                           </LinearLayout>
+                       </RelativeLayout>
+                   </LinearLayout>
+
+               </com.hjq.shape.layout.ShapeLinearLayout>
+               <com.hjq.shape.layout.ShapeLinearLayout
+
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginHorizontal="16dp"
+                       android:layout_marginTop="20dp"
+                       android:orientation="vertical"
+                       app:shape_radius="6dp"
+                       app:shape_solidColor="#F8F8F8">
+                   <TextView
+                           android:id="@+id/llCollection"
+                           android:layout_width="match_parent"
+                           android:text="@string/string_skm"
+                           android:gravity="center_vertical"
+                           android:textColor="@color/black"
+                           android:paddingHorizontal="@dimen/dp_14"
+                           android:layout_height="46dp"/>
+               </com.hjq.shape.layout.ShapeLinearLayout>
+           </LinearLayout>
+       </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</com.hjq.shape.layout.ShapeFrameLayout>

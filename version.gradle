@@ -1,0 +1,39 @@
+android {
+
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+
+    defaultConfig {
+
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+        manifestPlaceholders = rootProject.ext.manifestPlaceholders
+
+    }
+
+    compileOptions {
+        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_1_8
+    }
+
+    // 代码警告配置
+    lintOptions {
+        // 禁用文本硬编码警告
+        disable 'HardcodedText'
+    }
+
+    aaptOptions {
+        cruncherEnabled = false
+        useNewCruncher = false
+    }
+
+
+}
+
+
+repositories {
+    flatDir {
+        dirs 'libs', '../libs'
+    }
+}
